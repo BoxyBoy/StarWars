@@ -17,7 +17,7 @@ public class GunController : MonoBehaviour {
         }
     }
 
-	public void EquipGun(Gun gunToEquip)
+    public void EquipGun(Gun gunToEquip)
     {
         if (equippedGun != null)
         {

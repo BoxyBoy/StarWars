@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent (typeof (PlayerController))]
 [RequireComponent (typeof (GunController))]
-public class Player : MonoBehaviour {
+public class Player : GameEntity {
 
     public float moveSpeed = 5f;
 
@@ -12,13 +12,17 @@ public class Player : MonoBehaviour {
     PlayerController playerController;
     GunController gunController;
 
-	void Start () {
+    protected override void Start ()
+    {
+        base.Start();
+
         playerController = GetComponent<PlayerController>();
         gunController = GetComponent<GunController>();
         viewCamera = Camera.main;
-	}
-	
-	void Update () {
+    }
+
+    void Update ()
+    {
         // Movement Input
         Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         Vector3 moveVelocity = moveInput.normalized * moveSpeed;
@@ -43,5 +47,5 @@ public class Player : MonoBehaviour {
         {
             gunController.Shoot();
         }
-	}
+    }
 }

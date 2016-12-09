@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
         transform.LookAt(heightCorrectionPoint);
     }
 
-    public void FixedUpdate()
+    void FixedUpdate()
     {
         myRigidbody.MovePosition(myRigidbody.position + myVelocity * Time.fixedDeltaTime);
     }
