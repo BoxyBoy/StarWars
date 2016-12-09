@@ -14,7 +14,7 @@ public class Projectile : MonoBehaviour {
         mySpeed = speed;
     }
 
-    void Update ()
+    private void Update ()
     {
         float moveDistance = mySpeed * Time.deltaTime;
 
@@ -22,7 +22,7 @@ public class Projectile : MonoBehaviour {
         transform.Translate(Vector3.forward * moveDistance);
 	}
 
-    void CheckCollisions(float moveDistance)
+    private void CheckCollisions(float moveDistance)
     {
         Ray ray = new Ray(transform.position, transform.forward);
         RaycastHit hit;
@@ -33,7 +33,7 @@ public class Projectile : MonoBehaviour {
         }
     }
 
-    void OnHitObject(RaycastHit hit)
+    private void OnHitObject(RaycastHit hit)
     {
         IDamageable damageableObject = hit.collider.GetComponent<IDamageable>();
         if (damageableObject != null)

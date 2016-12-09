@@ -19,7 +19,7 @@ public class Enemy : GameEntity {
         StartCoroutine(UpdatePath());
 	}
 
-    void Update ()
+    private void Update ()
     {
     }
 

@@ -5,6 +5,8 @@ public class GameEntity : MonoBehaviour, IDamageable
 {
     public float initialHealth;
 
+    public event System.Action OnDeath;
+
     protected float health;
     protected bool dead;
 
@@ -26,6 +28,10 @@ public class GameEntity : MonoBehaviour, IDamageable
     protected void Die()
     {
         dead = true;
+        if (OnDeath != null)
+        {
+            OnDeath();
+        }
         GameObject.Destroy(gameObject);
     }
 }

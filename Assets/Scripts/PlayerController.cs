@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody myRigidbody;
     Vector3 myVelocity;
 
-    void Start()
+    private void Start()
     {
         myRigidbody = GetComponent<Rigidbody>();
     }
