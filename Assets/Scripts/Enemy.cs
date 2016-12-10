@@ -9,6 +9,7 @@ public class Enemy : GameEntity {
 
     NavMeshAgent pathFinder;
     Transform target;
+    GameEntity targetEntity;
     Material skinMaterial;
     Color originalColor;
 
@@ -16,30 +17,46 @@ public class Enemy : GameEntity {
 
     float attackDistanceThreshold = .5f;
     float timeBetweenAttacks = 1f;
+    float damage = 1f;
     float nextAttackTime;
     float myCollisionRadius;
     float targetCollisionRadius;
+    bool hasTarget;
 
     protected override void Start ()
     {
         base.Start();
-
-        currentState = State.Chasing;
     
         pathFinder = GetComponent<NavMeshAgent>();
+
         skinMaterial = GetComponent<Renderer>().material;
         originalColor = skinMaterial.color;
-        target = GameObject.FindGameObjectWithTag("Player").transform;
 
-        myCollisionRadius = GetComponent<CapsuleCollider>().radius;
-        targetCollisionRadius = target.GetComponent<CapsuleCollider>().radius;
+        if (GameObject.FindGameObjectWithTag("Player") != null)
+        {
+            hasTarget = true;
+            currentState = State.Chasing;
 
-        StartCoroutine(UpdatePath());
+            target = GameObject.FindGameObjectWithTag("Player").transform;
+            targetEntity = target.GetComponent<GameEntity>();
+            targetEntity.OnDeath += OnTargetDeath;
+
+            myCollisionRadius = GetComponent<CapsuleCollider>().radius;
+            targetCollisionRadius = target.GetComponent<CapsuleCollider>().radius;
+
+            StartCoroutine(UpdatePath());
+        } 
 	}
+
+    private void OnTargetDeath()
+    {
+        hasTarget = false;
+        currentState = State.Idle;
+    }
 
     private void Update ()
     {
-        if (Time.time > nextAttackTime)
+        if (hasTarget && Time.time > nextAttackTime)
         {
             float sqrDistanceToTarget = (target.position - transform.position).sqrMagnitude;
             if (sqrDistanceToTarget < Mathf.Pow(attackDistanceThreshold + myCollisionRadius + targetCollisionRadius, 2))
@@ -64,8 +81,14 @@ public class Enemy : GameEntity {
 
         skinMaterial.color = Color.red;
 
+        bool hasAppliedDamage = false;
         while (percent <= 1f)
         {
+            if (percent >= .5f && !hasAppliedDamage)
+            {
+                hasAppliedDamage = true;
+                targetEntity.TakeDamage(damage);
+            }
             percent += Time.deltaTime * attackSpeed;
             float interpolation = (-Mathf.Pow(percent, 2) + percent) * 4;
 
@@ -84,7 +107,7 @@ public class Enemy : GameEntity {
     {
         float refreshRate = 0.25f;
 
-        while (target != null)
+        while (hasTarget)
         {
             if (currentState == State.Chasing)
             {
