@@ -12,6 +12,10 @@ public class MapGenerator : MonoBehaviour {
     [Range(0, 1)]
     public float outlinePercent;
 
+    [Range(0, 1)]
+    public float obstaclePercent;
+
+    Coordinate mapCentre;
     List<Coordinate> tileCoordinates;
     Queue<Coordinate> shuffledTileCoordinates;
 
@@ -38,10 +42,51 @@ public class MapGenerator : MonoBehaviour {
         return new Vector3(-mapSize.x / 2 + 0.5f + x, 0, -mapSize.y / 2 + 0.5f + y);
     }
 
+    private bool MapIsFullyAccessible(bool[,] obstacleMap, int currentObstacleCount)
+    {
+        bool[,] visited = new bool[obstacleMap.GetLength(0), obstacleMap.GetLength(1)];
+        Queue<Coordinate> queue = new Queue<Coordinate>();
+
+        queue.Enqueue(mapCentre);
+        visited[mapCentre.x, mapCentre.y] = true;
+
+        int accessibleTileCount = 1;
+        while (queue.Count > 0)
+        {
+            Coordinate tile = queue.Dequeue();
+
+            for (int x = -1; x <= 1; x++)
+            {
+                for (int y = -1; y <= 1; y++) {
+                    int neighbourX = tile.x + x;
+                    int neighbourY = tile.y + y;
+
+                    if (x == 0 || y == 0)
+                    {
+                        if (neighbourX >= 0 && neighbourX < obstacleMap.GetLength(0) && neighbourY >= 0 && neighbourY < obstacleMap.GetLength(1))
+                        {
+                            if (!visited[neighbourX, neighbourY] && !obstacleMap[neighbourX, neighbourY])
+                            {
+                                visited[neighbourX, neighbourY] = true;
+                                queue.Enqueue(new Coordinate(neighbourX, neighbourY));
+                                accessibleTileCount++;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        int targetAccessibleTileCount = (int)(mapSize.x * mapSize.y - currentObstacleCount);
+
+        return targetAccessibleTileCount == accessibleTileCount;
+    }
+
     public void GenerateMap()
     {
         tileCoordinates = GenerateTileCoordinates(mapSize.x, mapSize.y);
         shuffledTileCoordinates = new Queue<Coordinate>(Shuffle.ShuffleArray(tileCoordinates.ToArray(), seed));
+
+        mapCentre = new Coordinate((int)(mapSize.x / 2), (int)(mapSize.y / 2));
 
         string holderName = "Generated Map";
         if (transform.FindChild(holderName))
@@ -63,13 +108,28 @@ public class MapGenerator : MonoBehaviour {
             }
         }
 
-        int obstacleCount = 10;
+        bool[,] obstacleMap = new bool[(int)mapSize.x, (int)mapSize.y];
+
+        int obstacleCount = (int)(mapSize.x * mapSize.y * obstaclePercent);
+        int currentObstacleCount = 0;
+
         for (int i = 0; i < obstacleCount; i++)
         {
             Coordinate randomCoordinate = GetRandomCoordinate();
-            Vector3 obstaclePosition = CoordinateToPosition(randomCoordinate.x, randomCoordinate.y);
-            Transform newObstacle = Instantiate(obstaclePrefab, obstaclePosition + Vector3.up * 0.5f, Quaternion.identity) as Transform;
-            newObstacle.parent = mapHolder;
+            obstacleMap[randomCoordinate.x, randomCoordinate.y] = true;
+            currentObstacleCount++;
+
+            if (randomCoordinate != mapCentre && MapIsFullyAccessible(obstacleMap, currentObstacleCount))
+            {
+                Vector3 obstaclePosition = CoordinateToPosition(randomCoordinate.x, randomCoordinate.y);
+                Transform newObstacle = Instantiate(obstaclePrefab, obstaclePosition + Vector3.up * 0.5f, Quaternion.identity) as Transform;
+                newObstacle.parent = mapHolder;
+            }
+            else
+            {
+                obstacleMap[randomCoordinate.x, randomCoordinate.y] = false;
+                currentObstacleCount--;
+            }
         }
     }
 
@@ -90,6 +150,16 @@ public class MapGenerator : MonoBehaviour {
         {
             x = _x;
             y = _y;
+        }
+
+        public static bool operator ==(Coordinate c1, Coordinate c2)
+        {
+            return c1.x == c2.x && c1.y == c2.y;
+        }
+
+        public static bool operator !=(Coordinate c1, Coordinate c2)
+        {
+            return !(c1 == c2);
         }
     }
 }
