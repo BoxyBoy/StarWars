@@ -6,8 +6,14 @@ public class MapGenerator : MonoBehaviour {
 
     public Transform tilePrefab;
     public Transform obstaclePrefab;
+    public Transform navMeshFloor;
+    public Transform navMeshMaskPrefab;
+
     public Vector2 mapSize;
+    public Vector2 maxMapSize;
+
     public int seed = 10;
+    public float tileSize = 1f;
 
     [Range(0, 1)]
     public float outlinePercent;
@@ -39,7 +45,7 @@ public class MapGenerator : MonoBehaviour {
 
     private Vector3 CoordinateToPosition(int x, int y)
     {
-        return new Vector3(-mapSize.x / 2 + 0.5f + x, 0, -mapSize.y / 2 + 0.5f + y);
+        return new Vector3(-mapSize.x / 2 + 0.5f + x, 0, -mapSize.y / 2 + 0.5f + y) * tileSize;
     }
 
     private bool MapIsFullyAccessible(bool[,] obstacleMap, int currentObstacleCount)
@@ -103,7 +109,7 @@ public class MapGenerator : MonoBehaviour {
             {
                 Vector3 tilePosition = CoordinateToPosition(x, y);
                 Transform newTile = Instantiate(tilePrefab, tilePosition, Quaternion.Euler(Vector3.right * 90)) as Transform;
-                newTile.localScale = Vector3.one * (1f - outlinePercent);
+                newTile.localScale = Vector3.one * (1f - outlinePercent) * tileSize;
                 newTile.parent = mapHolder;
             }
         }
@@ -122,7 +128,8 @@ public class MapGenerator : MonoBehaviour {
             if (randomCoordinate != mapCentre && MapIsFullyAccessible(obstacleMap, currentObstacleCount))
             {
                 Vector3 obstaclePosition = CoordinateToPosition(randomCoordinate.x, randomCoordinate.y);
-                Transform newObstacle = Instantiate(obstaclePrefab, obstaclePosition + Vector3.up * 0.5f, Quaternion.identity) as Transform;
+                Transform newObstacle = Instantiate(obstaclePrefab, obstaclePosition + Vector3.up * tileSize / 2, Quaternion.identity) as Transform;
+                newObstacle.localScale = Vector3.one * (1 - outlinePercent) * tileSize;
                 newObstacle.parent = mapHolder;
             }
             else
@@ -131,6 +138,24 @@ public class MapGenerator : MonoBehaviour {
                 currentObstacleCount--;
             }
         }
+
+        Transform navMeshMaskLeft = Instantiate(navMeshMaskPrefab, Vector3.left * (mapSize.x + maxMapSize.x) / 4 * tileSize, Quaternion.identity) as Transform;
+        navMeshMaskLeft.parent = mapHolder;
+        navMeshMaskLeft.localScale = new Vector3((maxMapSize.x - mapSize.x) / 2, 1f, mapSize.y) * tileSize;
+
+        Transform navMeshMaskRight = Instantiate(navMeshMaskPrefab, Vector3.right * (mapSize.x + maxMapSize.x) / 4 * tileSize, Quaternion.identity) as Transform;
+        navMeshMaskRight.parent = mapHolder;
+        navMeshMaskRight.localScale = new Vector3((maxMapSize.x - mapSize.x) / 2, 1f, mapSize.y) * tileSize;
+
+        Transform navMeshMaskTop = Instantiate(navMeshMaskPrefab, Vector3.forward * (mapSize.y + maxMapSize.y) / 4 * tileSize, Quaternion.identity) as Transform;
+        navMeshMaskTop.parent = mapHolder;
+        navMeshMaskTop.localScale = new Vector3(maxMapSize.x, 1f, (maxMapSize.y - mapSize.y) / 2) * tileSize;
+
+        Transform navMeshMaskBottom = Instantiate(navMeshMaskPrefab, Vector3.back * (mapSize.y + maxMapSize.y) / 4 * tileSize, Quaternion.identity) as Transform;
+        navMeshMaskBottom.parent = mapHolder;
+        navMeshMaskBottom.localScale = new Vector3(maxMapSize.x, 1f, (maxMapSize.y - mapSize.y) / 2) * tileSize;
+
+        navMeshFloor.localScale = new Vector3(maxMapSize.x, maxMapSize.y, 0) * tileSize;
     }
 
     public Coordinate GetRandomCoordinate()
@@ -150,6 +175,16 @@ public class MapGenerator : MonoBehaviour {
         {
             x = _x;
             y = _y;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Coordinate && this == (Coordinate)obj;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
         }
 
         public static bool operator ==(Coordinate c1, Coordinate c2)

@@ -1,6 +1,6 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEditor;
+using UnityEditor.AI;
 
 [CustomEditor (typeof (MapGenerator))]
 public class MapEditor : Editor {
@@ -8,8 +8,14 @@ public class MapEditor : Editor {
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
-
         MapGenerator map = target as MapGenerator;
-        map.GenerateMap();
+        
+        DrawDefaultInspector();
+
+        if (GUI.changed)
+        {
+            map.GenerateMap();
+            NavMeshBuilder.BuildNavMesh();
+        }
     }
 }
