@@ -25,8 +25,16 @@ public class MapGenerator : MonoBehaviour {
 
     Map currentMap;
 
-    private void Start()
+    private void Awake()
     {
+        Spawner spawner = FindObjectOfType<Spawner>();
+
+        spawner.OnNewWave += OnNewWave;
+    }
+
+    private void OnNewWave(int waveNumber)
+    {
+        mapIndex = waveNumber - 1;
         GenerateMap();
     }
 

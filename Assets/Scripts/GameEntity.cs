@@ -30,6 +30,7 @@ public class GameEntity : MonoBehaviour, IDamageable
         }
     }
 
+    [ContextMenu("Self Destruct")]
     protected void Die()
     {
         dead = true;
