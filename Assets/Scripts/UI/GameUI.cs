@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -16,7 +17,13 @@ public class GameUI : MonoBehaviour {
 	
     private void OnGameOver()
     {
-        StartCoroutine(Fade(Color.clear, Color.black, 1f));
+        StartCoroutine(_Wait(2f, Fade(Color.clear, Color.black, 1f)));
+    }
+
+    private IEnumerator _Wait(float time, IEnumerator callback)
+    {
+        yield return new WaitForSeconds(time);
+        StartCoroutine(callback);
         gameOverUI.SetActive(true);
     }
 

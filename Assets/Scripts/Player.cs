@@ -7,6 +7,7 @@ using UnityEngine;
 public class Player : GameEntity {
 
     public float moveSpeed = 5f;
+    public ParticleSystem deathEffect;
 
     Camera viewCamera;
     PlayerController playerController;
@@ -19,6 +20,15 @@ public class Player : GameEntity {
         playerController = GetComponent<PlayerController>();
         gunController = GetComponent<GunController>();
         viewCamera = Camera.main;
+    }
+
+    public override void TakeDamage(float damage)
+    {
+        if (damage >= health)
+        {
+            Destroy(Instantiate(deathEffect.gameObject, transform.position, Quaternion.FromToRotation(Vector3.forward, transform.position.normalized)) as GameObject, deathEffect.main.startLifetimeMultiplier);
+        }
+        base.TakeDamage(damage);
     }
 
     void Update ()
