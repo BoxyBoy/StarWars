@@ -17,18 +17,14 @@ public class GameUI : MonoBehaviour {
 	
     private void OnGameOver()
     {
-        StartCoroutine(_Wait(2f, Fade(Color.clear, Color.black, 1f)));
-    }
-
-    private IEnumerator _Wait(float time, IEnumerator callback)
-    {
-        yield return new WaitForSeconds(time);
-        StartCoroutine(callback);
+        StartCoroutine(Fade(Color.clear, Color.black, 1f, 2f));
         gameOverUI.SetActive(true);
     }
 
-    private IEnumerator Fade(Color from, Color to, float time)
+    private IEnumerator Fade(Color from, Color to, float time, float delay)
     {
+        yield return new WaitForSeconds(delay);
+
         float speed = 1 / time;
         float percent = 0f;
 
