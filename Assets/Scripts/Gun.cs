@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent (typeof (MuzzleFlash))]
 public class Gun : MonoBehaviour {
 
     public Transform muzzle;
@@ -12,6 +13,12 @@ public class Gun : MonoBehaviour {
     public float projectileVelocity = 35f;
 
     float nextShotTime;
+    MuzzleFlash muzzleFlash;
+
+    private void Start()
+    {
+        muzzleFlash = GetComponent<MuzzleFlash>();
+    }
 
     public void Shoot()
     {
@@ -22,6 +29,7 @@ public class Gun : MonoBehaviour {
             newProjectile.SetSpeed(projectileVelocity);
 
             Instantiate(shell, shellEjection.position, shellEjection.rotation);
+            muzzleFlash.Activate();
         }
     }
 }
