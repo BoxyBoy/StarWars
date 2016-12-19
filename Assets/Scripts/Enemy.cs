@@ -7,6 +7,7 @@ public class Enemy : GameEntity {
 
     public enum State {Idle, Chasing, Attacking};
     public ParticleSystem deathEffect;
+    public Animator myAnimator;
 
     NavMeshAgent pathFinder;
     Transform target;
@@ -27,8 +28,12 @@ public class Enemy : GameEntity {
     protected override void Start ()
     {
         base.Start();
-    
+
+        myAnimator = GetComponent<Animator>();
+
         pathFinder = GetComponent<NavMeshAgent>();
+        // pathFinder.updateRotation = true;
+        // pathFinder.updatePosition = true;
 
         skinMaterial = GetComponent<Renderer>().material;
         originalColor = skinMaterial.color;
@@ -66,13 +71,15 @@ public class Enemy : GameEntity {
 
     private void Update ()
     {
+        myAnimator.SetFloat("RemainingDistance", pathFinder.remainingDistance);
+
         if (hasTarget && Time.time > nextAttackTime)
         {
             float sqrDistanceToTarget = (target.position - transform.position).sqrMagnitude;
             if (sqrDistanceToTarget < Mathf.Pow(attackDistanceThreshold + myCollisionRadius + targetCollisionRadius, 2))
             {
                 nextAttackTime = Time.time + timeBetweenAttacks;
-                StartCoroutine(Attack());
+                // StartCoroutine(Attack());
             }
         }
     }

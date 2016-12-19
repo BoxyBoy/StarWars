@@ -84,6 +84,8 @@ public class Spawner : MonoBehaviour {
         
 
         Enemy spawnedEnemy = Instantiate(enemy, randomOpenTile.position, Quaternion.identity) as Enemy;
+
+        spawnedEnemy.transform.LookAt(playerTransform);
         spawnedEnemy.OnDeath += OnEnemyDeath;
     }
 
