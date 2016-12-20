@@ -1,16 +1,19 @@
 ﻿using System.Collections;
+using System;
 using UnityEngine;
 using UnityEngine.AI;
 
 [RequireComponent (typeof (NavMeshAgent))]
+[RequireComponent (typeof (Animator))]
 public class Enemy : GameEntity {
 
     public enum State {Idle, Chasing, Attacking};
     public ParticleSystem deathEffect;
-    public Animator myAnimator;
 
     NavMeshAgent pathFinder;
+    Animator myAnimator;
     Transform target;
+    Vector3 lastKnownTargetPosition;
     GameEntity targetEntity;
     Material skinMaterial;
     Color originalColor;
@@ -23,20 +26,20 @@ public class Enemy : GameEntity {
     float nextAttackTime;
     float myCollisionRadius;
     float targetCollisionRadius;
+    float refreshRate = 0.25f;
+    float nextRefreshTime;
     bool hasTarget;
 
     protected override void Start ()
     {
         base.Start();
 
-        myAnimator = GetComponent<Animator>();
-
         pathFinder = GetComponent<NavMeshAgent>();
-        // pathFinder.updateRotation = true;
-        // pathFinder.updatePosition = true;
+        myAnimator = GetComponent<Animator>();
 
         skinMaterial = GetComponent<Renderer>().material;
         originalColor = skinMaterial.color;
+        nextRefreshTime = Time.time + refreshRate;
 
         if (GameObject.FindGameObjectWithTag("Player") != null)
         {
@@ -54,25 +57,32 @@ public class Enemy : GameEntity {
         } 
 	}
 
-    public override void TakeHit(float damage, Vector3 hitPoint, Vector3 hitDirection)
+    IEnumerator UpdatePath()
     {
-        if (damage >= health)
+        float refreshRate = 0.5f;
+
+        while (hasTarget)
         {
-            Destroy(Instantiate(deathEffect.gameObject, hitPoint, Quaternion.FromToRotation(Vector3.forward, hitDirection)) as GameObject, deathEffect.main.startLifetimeMultiplier);
+            // Only change destination if the target has changed position
+            if (currentState == State.Chasing && target.position != lastKnownTargetPosition)
+            {
+                Vector3 directionToTarget = (target.position - transform.position).normalized;
+                Vector3 targetPosition = target.position - directionToTarget * (myCollisionRadius + targetCollisionRadius + attackDistanceThreshold / 2);
+                if (!dead)
+                {
+                    pathFinder.SetDestination(targetPosition);
+                    
+                    // Update last known target position
+                    lastKnownTargetPosition = target.position;
+                }
+            }
+
+            yield return new WaitForSeconds(refreshRate);
         }
-        base.TakeHit(damage, hitPoint, hitDirection);
     }
 
-    private void OnTargetDeath()
+    private void Update()
     {
-        hasTarget = false;
-        currentState = State.Idle;
-    }
-
-    private void Update ()
-    {
-        myAnimator.SetFloat("RemainingDistance", pathFinder.remainingDistance);
-
         if (hasTarget && Time.time > nextAttackTime)
         {
             float sqrDistanceToTarget = (target.position - transform.position).sqrMagnitude;
@@ -120,23 +130,18 @@ public class Enemy : GameEntity {
         pathFinder.enabled = true;
     }
 
-    IEnumerator UpdatePath()
+    public override void TakeHit(float damage, Vector3 hitPoint, Vector3 hitDirection)
     {
-        float refreshRate = 0.25f;
-
-        while (hasTarget)
+        if (damage >= health)
         {
-            if (currentState == State.Chasing)
-            {
-                Vector3 directionToTarget = (target.position - transform.position).normalized;
-                Vector3 targetPosition = target.position - directionToTarget * (myCollisionRadius + targetCollisionRadius + attackDistanceThreshold / 2);
-                if (!dead)
-                {
-                    pathFinder.SetDestination(targetPosition);
-                }
-            }
-            
-            yield return new WaitForSeconds(refreshRate);
+            Destroy(Instantiate(deathEffect.gameObject, hitPoint, Quaternion.FromToRotation(Vector3.forward, hitDirection)) as GameObject, deathEffect.main.startLifetimeMultiplier);
         }
+        base.TakeHit(damage, hitPoint, hitDirection);
+    }
+
+    private void OnTargetDeath()
+    {
+        hasTarget = false;
+        currentState = State.Idle;
     }
 }

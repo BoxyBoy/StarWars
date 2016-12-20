@@ -81,7 +81,6 @@ public class Spawner : MonoBehaviour {
             spawnTimer += Time.deltaTime;
             yield return null;
         }
-        
 
         Enemy spawnedEnemy = Instantiate(enemy, randomOpenTile.position, Quaternion.identity) as Enemy;
 
