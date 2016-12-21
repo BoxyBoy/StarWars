@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent (typeof (TrailRenderer))]
 public class Projectile : MonoBehaviour {
 
     public LayerMask collisionMask;
+    public Color trailColor;
 
     float mySpeed = 10f;
     float myDamage = 1f;
@@ -25,6 +27,8 @@ public class Projectile : MonoBehaviour {
         {
             OnHitObject(initialCollisions[0], transform.position);
         }
+
+        GetComponent<TrailRenderer>().material.SetColor("_TintColor", trailColor);
     }
 
     private void Update ()
