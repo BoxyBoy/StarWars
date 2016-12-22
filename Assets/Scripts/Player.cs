@@ -7,6 +7,7 @@ using UnityEngine;
 public class Player : GameEntity {
 
     public float moveSpeed = 5f;
+    public Crosshairs crosshairs;
     public ParticleSystem deathEffect;
 
     Camera viewCamera;
@@ -41,15 +42,18 @@ public class Player : GameEntity {
 
         // Look At Input
         Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);
-        Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
+        Plane groundPlane = new Plane(Vector3.up, Vector3.up * gunController.GunHeight);
         float rayDistance;
 
         if (groundPlane.Raycast(ray, out rayDistance))
         {
             Vector3 pointOfIntersection = ray.GetPoint(rayDistance);
-            // Debug.DrawLine(ray.origin, pointOfIntersection, Color.red);
+            Debug.DrawLine(ray.origin, pointOfIntersection, Color.red);
 
             playerController.LookAt(pointOfIntersection);
+
+            crosshairs.transform.position = pointOfIntersection;
+            crosshairs.DetectTargets(ray);
         }
 
         // Weapon Input

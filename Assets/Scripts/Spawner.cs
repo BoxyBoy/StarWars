@@ -94,7 +94,10 @@ public class Spawner : MonoBehaviour {
 
         while (spawnTimer < spawnDelay)
         {
-            tileMaterial.color = Color.Lerp(originalColor, flashColor, Mathf.PingPong(spawnTimer * tileFlashSpeed, 1f));
+            if (originalColor != flashColor)
+            {
+                tileMaterial.color = Color.Lerp(originalColor, flashColor, Mathf.PingPong(spawnTimer * tileFlashSpeed, 1f));
+            } 
 
             spawnTimer += Time.deltaTime;
             yield return null;
