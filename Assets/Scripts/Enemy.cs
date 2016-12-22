@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,11 +8,13 @@ public class Enemy : GameEntity {
 
     public enum State {Idle, Chasing, Attacking};
     public ParticleSystem deathEffect;
+    public float agentPathRefreshRate = 1.0f;
+    public float agentStoppingDistance = 1.0f;
 
     NavMeshAgent pathFinder;
     Animator myAnimator;
     Transform target;
-    Vector3 lastKnownTargetPosition;
+    Vector3 agentDestination;
     GameEntity targetEntity;
     Material skinMaterial;
     Color originalColor;
@@ -26,16 +27,12 @@ public class Enemy : GameEntity {
     float nextAttackTime;
     float myCollisionRadius;
     float targetCollisionRadius;
-    float refreshRate = 0.25f;
-    float nextRefreshTime;
     bool hasTarget;
 
     private void Awake()
     {
         pathFinder = GetComponent<NavMeshAgent>();
         myAnimator = GetComponent<Animator>();
-
-        nextRefreshTime = Time.time + refreshRate;
 
         if (GameObject.FindGameObjectWithTag("Player") != null)
         {
@@ -53,12 +50,11 @@ public class Enemy : GameEntity {
     {
         base.Start();
 
-        nextRefreshTime = Time.time + refreshRate;
-
         if (hasTarget)
         {
             currentState = State.Chasing;
             targetEntity.OnDeath += OnTargetDeath;
+            agentDestination = pathFinder.destination;
 
             StartCoroutine(UpdatePath());
         } 
@@ -66,25 +62,22 @@ public class Enemy : GameEntity {
 
     IEnumerator UpdatePath()
     {
-        float refreshRate = 0.5f;
-
         while (hasTarget)
         {
-            // Only change destination if the target has changed position
-            if (currentState == State.Chasing && target.position != lastKnownTargetPosition)
+            if (currentState == State.Chasing)
             {
                 Vector3 directionToTarget = (target.position - transform.position).normalized;
                 Vector3 targetPosition = target.position - directionToTarget * (myCollisionRadius + targetCollisionRadius + attackDistanceThreshold / 2);
-                if (!dead)
+
+                if (!dead && !pathFinder.pathPending && Vector3.Distance(agentDestination, targetPosition) > agentStoppingDistance)
                 {
-                    pathFinder.SetDestination(targetPosition);
-                    
-                    // Update last known target position
-                    lastKnownTargetPosition = target.position;
+                    // Update agent destination
+                    agentDestination = targetPosition;
+                    pathFinder.destination = agentDestination;
                 }
             }
 
-            yield return new WaitForSeconds(refreshRate);
+            yield return new WaitForSeconds(agentPathRefreshRate);
         }
     }
 
