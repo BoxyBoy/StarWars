@@ -30,28 +30,35 @@ public class Enemy : GameEntity {
     float nextRefreshTime;
     bool hasTarget;
 
-    protected override void Start ()
+    private void Awake()
     {
-        base.Start();
-
         pathFinder = GetComponent<NavMeshAgent>();
         myAnimator = GetComponent<Animator>();
 
-        skinMaterial = GetComponent<Renderer>().material;
-        originalColor = skinMaterial.color;
         nextRefreshTime = Time.time + refreshRate;
 
         if (GameObject.FindGameObjectWithTag("Player") != null)
         {
             hasTarget = true;
-            currentState = State.Chasing;
 
             target = GameObject.FindGameObjectWithTag("Player").transform;
             targetEntity = target.GetComponent<GameEntity>();
-            targetEntity.OnDeath += OnTargetDeath;
 
             myCollisionRadius = GetComponent<CapsuleCollider>().radius;
             targetCollisionRadius = target.GetComponent<CapsuleCollider>().radius;
+        }
+    }
+
+    protected override void Start ()
+    {
+        base.Start();
+
+        nextRefreshTime = Time.time + refreshRate;
+
+        if (hasTarget)
+        {
+            currentState = State.Chasing;
+            targetEntity.OnDeath += OnTargetDeath;
 
             StartCoroutine(UpdatePath());
         } 
@@ -128,6 +135,21 @@ public class Enemy : GameEntity {
 
         currentState = State.Chasing;
         pathFinder.enabled = true;
+    }
+
+    public void SetCharacteristics(float moveSpeed, int hitsToKillPlayer, float enemyHealth, Color skinColor)
+    {
+        pathFinder.speed = moveSpeed;
+
+        if (hasTarget)
+        {
+            damage = Mathf.Ceil(targetEntity.initialHealth / hitsToKillPlayer);
+        }
+        initialHealth = enemyHealth;
+
+        skinMaterial = GetComponent<Renderer>().material;
+        skinMaterial.color = skinColor;
+        originalColor = skinMaterial.color;
     }
 
     public override void TakeHit(float damage, Vector3 hitPoint, Vector3 hitDirection)

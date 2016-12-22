@@ -10,6 +10,7 @@ public class MapGenerator : MonoBehaviour {
     public Transform tilePrefab;
     public Transform obstaclePrefab;
     public Transform navMeshFloor;
+    public Transform mapFloor;
     public Transform navMeshMaskPrefab;
     public Vector2 maxMapSize;
 
@@ -111,7 +112,6 @@ public class MapGenerator : MonoBehaviour {
         currentMap = maps[mapIndex];
         tileMap = new Transform[currentMap.mapSize.x, currentMap.mapSize.y];
         System.Random randomGenerator = new System.Random(currentMap.seed);
-        GetComponent<BoxCollider>().size = new Vector3(currentMap.mapSize.x * tileSize, 0.1f, currentMap.mapSize.y * tileSize);
 
         // Generating Coordinates
         tileCoordinates = GenerateTileCoordinates(currentMap.mapSize.x, currentMap.mapSize.y);
@@ -200,6 +200,7 @@ public class MapGenerator : MonoBehaviour {
         navMeshMaskBottom.localScale = new Vector3(maxMapSize.x, 1f, (maxMapSize.y - currentMap.mapSize.y) / 2f) * tileSize;
 
         navMeshFloor.localScale = new Vector3(maxMapSize.x, maxMapSize.y, 0) * tileSize;
+        mapFloor.localScale = new Vector3(currentMap.mapSize.x * tileSize, currentMap.mapSize.y * tileSize, 1f);
     }
 
     public Coordinate GetRandomCoordinate()
