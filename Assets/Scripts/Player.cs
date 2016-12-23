@@ -9,6 +9,7 @@ public class Player : GameEntity {
     public float moveSpeed = 5f;
     public Crosshairs crosshairs;
     public ParticleSystem deathEffect;
+    public float aimDistanceTreshold = 1.0f;
 
     Camera viewCamera;
     PlayerController playerController;
@@ -54,6 +55,13 @@ public class Player : GameEntity {
 
             crosshairs.transform.position = pointOfIntersection;
             crosshairs.DetectTargets(ray);
+
+            // Aim precision
+            float distanceBetweenPlayerAndPointOfIntersection = (new Vector2(pointOfIntersection.x, pointOfIntersection.z) - new Vector2(transform.position.x, transform.position.z)).sqrMagnitude;
+            if (distanceBetweenPlayerAndPointOfIntersection > aimDistanceTreshold)
+            {
+                gunController.Aim(pointOfIntersection);
+            }
         }
 
         // Weapon Input
@@ -65,6 +73,11 @@ public class Player : GameEntity {
         if (Input.GetMouseButtonUp(0))
         {
             gunController.OnTriggerRelease();
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            gunController.Reload();
         }
     }
 }
