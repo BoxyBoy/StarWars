@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour {
     public bool developerMode;
 
     public Wave[] waves;
-    public Enemy enemy;
+    public Enemy[] enemies;
     public event System.Action<int> OnNewWave;
 
     GameEntity playerEntity;
@@ -103,7 +103,8 @@ public class Spawner : MonoBehaviour {
             yield return null;
         }
 
-        Enemy spawnedEnemy = Instantiate(enemy, randomOpenTile.position, Quaternion.identity) as Enemy;
+        int enemyPrefabIndex = Random.Range(0, enemies.Length);
+        Enemy spawnedEnemy = Instantiate(enemies[enemyPrefabIndex], randomOpenTile.position, Quaternion.identity) as Enemy;
 
         spawnedEnemy.transform.LookAt(playerTransform);
         spawnedEnemy.OnDeath += OnEnemyDeath;
