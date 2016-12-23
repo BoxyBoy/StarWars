@@ -8,6 +8,11 @@ public class Enemy : GameEntity {
 
     public enum State {Idle, Chasing, Attacking};
     public ParticleSystem deathEffect;
+
+    [Header("Enemy Main Settings")]
+    public bool canAttackPlayer = true;
+
+    [Header("Enemy Navigation Settings")]
     public float agentPathRefreshRate = 1.0f;
     public float agentStoppingDistance = 1.0f;
 
@@ -89,7 +94,10 @@ public class Enemy : GameEntity {
             if (sqrDistanceToTarget < Mathf.Pow(attackDistanceThreshold + myCollisionRadius + targetCollisionRadius, 2))
             {
                 nextAttackTime = Time.time + timeBetweenAttacks;
-                // StartCoroutine(Attack());
+                if (canAttackPlayer)
+                {
+                    StartCoroutine(Attack());
+                }
             }
         }
     }

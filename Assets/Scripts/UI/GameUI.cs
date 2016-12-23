@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -18,12 +17,14 @@ public class GameUI : MonoBehaviour {
     private void OnGameOver()
     {
         StartCoroutine(Fade(Color.clear, Color.black, 1f, 2f));
-        gameOverUI.SetActive(true);
     }
 
     private IEnumerator Fade(Color from, Color to, float time, float delay)
     {
         yield return new WaitForSeconds(delay);
+
+        gameOverUI.SetActive(true);
+        Cursor.visible = true;
 
         float speed = 1 / time;
         float percent = 0f;
