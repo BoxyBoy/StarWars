@@ -148,7 +148,7 @@ public class Enemy : GameEntity {
         }
         initialHealth = enemyHealth;
 
-        skinMaterial = GetComponent<Renderer>().material;
+        skinMaterial = GetComponent<Renderer>().sharedMaterial;
         skinMaterial.color = skinColor;
         originalColor = skinMaterial.color;
     }

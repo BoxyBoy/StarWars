@@ -146,6 +146,11 @@ public class Spawner : MonoBehaviour {
             {
                 OnNewWave(currentWaveNumber);
             }
+
+            // When to start spawning enemies
+            nextSpawnTime = Time.time + currentWave.levelStartDelay;
+            nextCampingCheckTime = Time.time + currentWave.levelStartDelay;
+
             ResetPlayerPosition();
         }
     }
@@ -161,5 +166,7 @@ public class Spawner : MonoBehaviour {
         public int hitsToKillPlayer;
         public float enemyHealth;
         public Color skinColor;
+
+        public float levelStartDelay = 3f;
     }
 }

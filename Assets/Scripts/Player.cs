@@ -14,19 +14,36 @@ public class Player : GameEntity {
     Camera viewCamera;
     PlayerController playerController;
     GunController gunController;
+    Spawner spawner;
+
+    private void Awake()
+    {
+        playerController = GetComponent<PlayerController>();
+        gunController = GetComponent<GunController>();
+        spawner = FindObjectOfType<Spawner>();
+
+        spawner.OnNewWave += OnNewWave;
+    }
 
     protected override void Start ()
     {
         base.Start();
 
-        playerController = GetComponent<PlayerController>();
-        gunController = GetComponent<GunController>();
-        viewCamera = Camera.main;
+        viewCamera = Camera.main;        
+    }
+
+    private void OnNewWave(int waveNumber)
+    {
+        // Re-generate health
+        health = initialHealth;
+
+        // Equip weapon
+        gunController.EquipGun(waveNumber);
     }
 
     public override void TakeDamage(float damage)
     {
-        if (damage >= health)
+        if (damage >= health && deathEffect.gameObject != null)
         {
             Destroy(Instantiate(deathEffect.gameObject, transform.position, Quaternion.FromToRotation(Vector3.forward, transform.position.normalized)) as GameObject, deathEffect.main.startLifetimeMultiplier);
         }
