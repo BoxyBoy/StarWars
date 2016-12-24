@@ -28,6 +28,9 @@ public class Gun : MonoBehaviour {
     public float recoilPositionTime = .1f;
     public float recoilRotationTime = .1f;
 
+    [Header("Gun Audio Settings")]
+    public AudioClip shootAudio;
+    public AudioClip reloadAudio;
 
     float nextShotTime;
     bool triggerReleasedSinceLastShot;
@@ -107,6 +110,9 @@ public class Gun : MonoBehaviour {
             transform.localPosition -= Vector3.forward * Random.Range(kickMinMax.x, kickMinMax.y);
             recoilAngle += Random.Range(recoilAngleMinMax.x, recoilAngleMinMax.y);
             recoilAngle = Mathf.Clamp(recoilAngle, 0f, 30f);
+
+            // Audio Manager
+            AudioManager.instance.PlaySound(shootAudio, transform.position);
         }
     }
 
@@ -123,6 +129,9 @@ public class Gun : MonoBehaviour {
         if (!isReloading && projectilesRemainingInMagazine != projectilesPerMagazine)
         {
             StartCoroutine(AnimateReload());
+
+            // Audio Manager
+            AudioManager.instance.PlaySound(reloadAudio, transform.position);
         }
     }
 
