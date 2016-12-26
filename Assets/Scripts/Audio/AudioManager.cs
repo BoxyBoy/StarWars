@@ -8,9 +8,9 @@ public class AudioManager : MonoBehaviour {
 
     SoundLibrary soundLibrary;
 
-    float masterVolumePercent = .3f;
-    float sfxVolumePercent = 1f;
-    float musicVolumePercent = 1f;
+    public float masterVolumePercent { get; private set; }
+    public float sfxVolumePercent { get; private set; }
+    public float musicVolumePercent { get; private set; }
 
     Transform audioListener;
     Transform player;
@@ -67,12 +67,15 @@ public class AudioManager : MonoBehaviour {
         newSfx2DSource.transform.parent = transform;
 
         audioListener = FindObjectOfType<AudioListener>().transform;
-        player = FindObjectOfType<Player>().transform;
+        if (FindObjectOfType<Player>())
+        {
+            player = FindObjectOfType<Player>().transform;
+        } 
 
         // Load Player Preferences
-        masterVolumePercent = PlayerPrefs.GetFloat("MasterVolume", masterVolumePercent);
-        sfxVolumePercent = PlayerPrefs.GetFloat("SfxVolume", sfxVolumePercent);
-        musicVolumePercent = PlayerPrefs.GetFloat("MusicVolume", musicVolumePercent);
+        masterVolumePercent = PlayerPrefs.GetFloat("MasterVolume", 1f);
+        sfxVolumePercent = PlayerPrefs.GetFloat("SfxVolume", 1f);
+        musicVolumePercent = PlayerPrefs.GetFloat("MusicVolume", 1f);
     }
 
     private void Update()
@@ -105,6 +108,7 @@ public class AudioManager : MonoBehaviour {
         PlayerPrefs.SetFloat("MasterVolume", masterVolumePercent);
         PlayerPrefs.SetFloat("SfxVolume", sfxVolumePercent);
         PlayerPrefs.SetFloat("MusicVolume", musicVolumePercent);
+        PlayerPrefs.Save();
     }
 
     public void PlayMusic(AudioClip audioClip, float fadeDuration = 1f)

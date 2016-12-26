@@ -33,6 +33,8 @@ public class GameEntity : MonoBehaviour, IDamageable
     [ContextMenu("Self Destruct")]
     public virtual void Die()
     {
+        if (dead == true) return;
+
         dead = true;
         if (OnDeath != null)
         {

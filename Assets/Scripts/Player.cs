@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent (typeof (PlayerController))]
 [RequireComponent (typeof (GunController))]
@@ -43,7 +41,7 @@ public class Player : GameEntity {
 
     public override void TakeDamage(float damage)
     {
-        if (gameObject != null && damage >= health)
+        if (transform != null && gameObject != null && damage >= health)
         {
             Destroy(Instantiate(deathEffect.gameObject, transform.position, Quaternion.FromToRotation(Vector3.forward, transform.position.normalized)) as GameObject, deathEffect.main.startLifetimeMultiplier);
         }

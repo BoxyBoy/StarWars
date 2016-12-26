@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 4e8ac0980e2ce7349a05d6ed149ea521
+timeCreated: 1482783852
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Trajan
+  fontNames:
+  - Trajan
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
