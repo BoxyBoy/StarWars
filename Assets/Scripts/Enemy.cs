@@ -96,6 +96,7 @@ public class Enemy : GameEntity {
                 nextAttackTime = Time.time + timeBetweenAttacks;
                 if (canAttackPlayer)
                 {
+                    AudioManager.instance.PlaySound("Enemy Attack", transform.position);
                     StartCoroutine(Attack());
                 }
             }
@@ -155,8 +156,11 @@ public class Enemy : GameEntity {
 
     public override void TakeHit(float damage, Vector3 hitPoint, Vector3 hitDirection)
     {
+        AudioManager.instance.PlaySound("Impact", transform.position);
+
         if (damage >= health)
         {
+            AudioManager.instance.PlaySound("Enemy Death", transform.position);
             Destroy(Instantiate(deathEffect.gameObject, hitPoint, Quaternion.FromToRotation(Vector3.forward, hitDirection)) as GameObject, deathEffect.main.startLifetimeMultiplier);
         }
         base.TakeHit(damage, hitPoint, hitDirection);

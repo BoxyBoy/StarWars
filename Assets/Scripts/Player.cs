@@ -43,7 +43,7 @@ public class Player : GameEntity {
 
     public override void TakeDamage(float damage)
     {
-        if (damage >= health && deathEffect.gameObject != null)
+        if (gameObject != null && damage >= health)
         {
             Destroy(Instantiate(deathEffect.gameObject, transform.position, Quaternion.FromToRotation(Vector3.forward, transform.position.normalized)) as GameObject, deathEffect.main.startLifetimeMultiplier);
         }
@@ -96,5 +96,11 @@ public class Player : GameEntity {
         {
             gunController.Reload();
         }
+    }
+
+    public override void Die()
+    {
+        AudioManager.instance.PlaySound("Player Death", transform.position);
+        base.Die();
     }
 }

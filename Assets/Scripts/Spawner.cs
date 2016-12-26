@@ -133,6 +133,12 @@ public class Spawner : MonoBehaviour {
 
     private void NextWave()
     {
+        // Play Level Complete Sound
+        if (currentWaveNumber > 0)
+        {
+            AudioManager.instance.PlaySound2D("Level Complete");
+        }
+
         currentWaveNumber++;
 
         if (currentWaveNumber - 1 < waves.Length)
