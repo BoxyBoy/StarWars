@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour {
     public static AudioManager instance;
@@ -17,6 +18,27 @@ public class AudioManager : MonoBehaviour {
     AudioSource[] musicSources;
     AudioSource sfx2DSource;
     int activeMusicSourceIndex;
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnLevelFinishedLoading;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+    }
+
+    private void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+    {
+        if (player == null)
+        {
+            if (FindObjectOfType<Player>() != null)
+            {
+                player = FindObjectOfType<Player>().transform;
+            }
+        }
+    }
 
     private void Awake()
     {
