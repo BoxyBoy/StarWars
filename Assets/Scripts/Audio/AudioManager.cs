@@ -101,8 +101,7 @@ public class AudioManager : MonoBehaviour {
                 break;
         }
 
-        musicSources[0].volume = musicVolumePercent * masterVolumePercent;
-        musicSources[1].volume = musicVolumePercent * masterVolumePercent;
+        musicSources[activeMusicSourceIndex].volume = musicVolumePercent * masterVolumePercent;
 
         // Save Player Preferences
         PlayerPrefs.SetFloat("MasterVolume", masterVolumePercent);

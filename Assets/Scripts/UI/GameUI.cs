@@ -11,6 +11,9 @@ public class GameUI : MonoBehaviour {
     public RectTransform newWaveBanner;
     public Text newWaveTitle;
     public Text newWaveEnemyCount;
+    public Text scoreUI;
+    public Text gameOverScoreUI;
+    public RectTransform healthBar;
 
     Player player;
     Spawner spawner;
@@ -26,6 +29,18 @@ public class GameUI : MonoBehaviour {
         player.OnDeath += OnGameOver;
 	}
 
+    private void Update()
+    {
+        scoreUI.text = ScoreManager.score.ToString("D6");
+
+        float healthPercent = 0f;
+        if (player != null)
+        {
+            healthPercent = player.health / player.initialHealth;
+        }
+        healthBar.localScale = new Vector3(healthPercent, 1f, 1f);
+    }
+
     private void OnNewWave(int waveNumber)
     {
         string[] numbers = { "ONE", "TWO", "THREE", "FOUR", "FIVE" };
@@ -40,14 +55,16 @@ public class GameUI : MonoBehaviour {
 	
     private void OnGameOver()
     {
+        Cursor.visible = true;
+        StartCoroutine(Fade(Color.clear, new Color(0, 0, 0, .7f), 2f));
+        gameOverScoreUI.text = scoreUI.text;
+        scoreUI.transform.parent.gameObject.SetActive(false);
+        healthBar.transform.parent.gameObject.SetActive(false);
         gameOverUI.SetActive(true);
-        StartCoroutine(Fade(Color.clear, Color.black, 2f));
     }
 
     private IEnumerator Fade(Color from, Color to, float time)
     {
-        Cursor.visible = true;
-
         float speed = 1 / time;
         float percent = 0f;
 
@@ -81,7 +98,7 @@ public class GameUI : MonoBehaviour {
                 }
             }
 
-            newWaveBanner.anchoredPosition = Vector2.up * Mathf.Lerp(-170, 60, percent);
+            newWaveBanner.anchoredPosition = Vector2.up * Mathf.Lerp(-40, 120, percent);
             yield return null;
         }
     }
@@ -90,5 +107,10 @@ public class GameUI : MonoBehaviour {
     public void StartNewGame()
     {
         SceneManager.LoadScene("Main");
+    }
+
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

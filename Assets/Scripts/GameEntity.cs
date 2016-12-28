@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class GameEntity : MonoBehaviour, IDamageable
 {
@@ -7,7 +6,7 @@ public class GameEntity : MonoBehaviour, IDamageable
 
     public event System.Action OnDeath;
 
-    protected float health;
+    public float health { get; protected set; }
     protected bool dead;
 
     protected virtual void Start()

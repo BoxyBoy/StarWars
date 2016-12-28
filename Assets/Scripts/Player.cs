@@ -41,7 +41,7 @@ public class Player : GameEntity {
 
     public override void TakeDamage(float damage)
     {
-        if (transform != null && gameObject != null && damage >= health)
+        if (FindObjectOfType<Player>() != null && damage >= health)
         {
             Destroy(Instantiate(deathEffect.gameObject, transform.position, Quaternion.FromToRotation(Vector3.forward, transform.position.normalized)) as GameObject, deathEffect.main.startLifetimeMultiplier);
         }
@@ -93,6 +93,12 @@ public class Player : GameEntity {
         if (Input.GetKeyDown(KeyCode.R))
         {
             gunController.Reload();
+        }
+
+        // Player Death Plummet
+        if (transform.position.y < -10f)
+        {
+            TakeDamage(health);
         }
     }
 
