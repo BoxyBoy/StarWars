@@ -33,6 +33,11 @@ public class MenuManager : MonoBehaviour {
         fullScreenToggle.isOn = isFullscreen;
     }
 
+    public void StartCampaign()
+    {
+        //SceneManager.LoadScene("Kamino")
+    }
+
     public void Play()
     {
         SceneManager.LoadScene("Main");

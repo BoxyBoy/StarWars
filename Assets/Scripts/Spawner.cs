@@ -7,6 +7,7 @@ public class Spawner : MonoBehaviour {
 
     public Wave[] waves;
     public Enemy[] enemies;
+    
     public event System.Action<int> OnNewWave;
 
     GameEntity playerEntity;
@@ -41,6 +42,7 @@ public class Spawner : MonoBehaviour {
 
     private void Update()
     {
+
         if (isDisabled) return;
 
         if (Time.time > nextCampingCheckTime)
@@ -50,6 +52,7 @@ public class Spawner : MonoBehaviour {
 
             previousCampingPosition = playerTransform.position;
         }
+        
 
         if ((enemiesRemainingToSpawn > 0 || currentWave.infinite) && Time.time > nextSpawnTime)
         {
@@ -107,7 +110,11 @@ public class Spawner : MonoBehaviour {
         Enemy spawnedEnemy = Instantiate(enemies[enemyPrefabIndex], randomOpenTile.position, Quaternion.identity) as Enemy;
 
         spawnedEnemy.transform.LookAt(playerTransform);
+
+        //this never triggers
         spawnedEnemy.OnDeath += OnEnemyDeath;
+        
+        
         spawnedEnemy.SetCharacteristics(currentWave.moveSpeed, currentWave.hitsToKillPlayer, currentWave.enemyHealth, currentWave.skinColor);
     }
 
@@ -116,7 +123,7 @@ public class Spawner : MonoBehaviour {
         isDisabled = true;
     }
 
-    private void OnEnemyDeath()
+    public void OnEnemyDeath()
     {
         enemiesRemainingAlive--;
 

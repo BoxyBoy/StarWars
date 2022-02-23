@@ -56,15 +56,18 @@ public class Projectile : MonoBehaviour {
         {
             Destroy(this.gameObject);
         }
+
         if ("Enemy" == collision.gameObject.tag)
         {
+            OnHitObject(collision.collider,Vector3.forward);
+
             Destroy(this.gameObject);
-            Destroy(collision.gameObject);
-            scoreManager.OnEnemyKilled();
+           // Destroy(collision.gameObject);
+            //scoreManager.OnEnemyKilled();
         }
     }
 
-    /*private void OnHitObject(Collider collider, Vector3 hitPoint)
+    private void OnHitObject(Collider collider, Vector3 hitPoint)
     {
         IDamageable damageableObject = collider.GetComponent<IDamageable>();
         if (damageableObject != null)
@@ -72,5 +75,5 @@ public class Projectile : MonoBehaviour {
             damageableObject.TakeHit(myDamage, hitPoint, transform.forward);
         }
         GameObject.Destroy(gameObject);
-    }*/
+    }
 }
