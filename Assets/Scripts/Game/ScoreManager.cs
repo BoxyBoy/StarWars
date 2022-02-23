@@ -20,7 +20,7 @@ public class ScoreManager : MonoBehaviour {
         player.OnDeath += OnPlayerDeath;
     }
 
-    private void OnEnemyKilled()
+    public void OnEnemyKilled()
     {
         if (Time.time < lastEnemyKilledTime + streakExpiryTime)
         {
