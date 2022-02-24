@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class PowerUp : MonoBehaviour
 {
     protected Collider modelCollider;
+    protected Rigidbody rb;
     protected Vector3 initialLocation;
     protected Player player;
 
@@ -18,7 +19,8 @@ public abstract class PowerUp : MonoBehaviour
     void Start()
     {
         //set RigidBody, initialLocation, and player
-        modelCollider = pickUpModel.GetComponent<Collider>();
+        modelCollider = GetComponent<Collider>();
+        rb = GetComponent<Rigidbody>();
         initialLocation = this.transform.position;
         player = FindObjectOfType<Player>();
     }
@@ -44,7 +46,6 @@ public abstract class PowerUp : MonoBehaviour
     {
         if (collision.collider.tag.Equals("Player"))
         {
-            Debug.Log("Heal Collision");
             pickUpModel.SetActive(false);
             ApplyPowerUp();
             isPickedUp = true;
