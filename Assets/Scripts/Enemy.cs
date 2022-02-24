@@ -89,6 +89,8 @@ public class Enemy : GameEntity {
 
     private void Update()
     {
+        canAttackPlayer = true;
+
         if (hasTarget && Time.time > nextAttackTime)
         {
             float sqrDistanceToTarget = (target.position - transform.position).sqrMagnitude;
