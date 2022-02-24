@@ -6,7 +6,7 @@ public class GameEntity : MonoBehaviour, IDamageable
 
     public event System.Action OnDeath;
 
-    public float health { get; protected set; }
+    public float health { get; set; }
     protected bool dead;
 
     protected virtual void Start()
