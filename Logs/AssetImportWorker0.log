@@ -276,3 +276,2323 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003101 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.011 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1463 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.8 MB.
+System memory in use after: 80.4 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 1986.
+Total: 2.287200 ms (FindLiveObjects: 0.169900 ms CreateObjectMapping: 0.050800 ms MarkObjects: 1.720600 ms  DeleteObjects: 0.344800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 197.548732 seconds.
+  path: Assets/Prefabs/PowerUps/HealthPowerUp.prefab
+  artifactKey: Guid(129d1ce054bdc144c9bc4b2019f38c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PowerUps/HealthPowerUp.prefab using Guid(129d1ce054bdc144c9bc4b2019f38c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4efdf451ef54fff9f058223de687c2a8') in 0.314976 seconds 
+  Import took 0.318076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.182416 seconds.
+  path: Assets/Models/DC15sBlasterRifle
+  artifactKey: Guid(3ad48229357ec5b48ad19bebe6a68c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle using Guid(3ad48229357ec5b48ad19bebe6a68c41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '006cfb62a777fd566f10329f9e416507') in 0.005814 seconds 
+  Import took 0.008911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.004691 seconds.
+  path: Assets/Models/DC15sBlasterRifle/source/DC-15S.fbx
+  artifactKey: Guid(8a16042882012ac4ebf79796d4978f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/source/DC-15S.fbx using Guid(8a16042882012ac4ebf79796d4978f7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '566d6ab1e7ed24941035755fced0d641') in 0.097019 seconds 
+  Import took 0.099692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Models/DC15sBlasterRifle/source
+  artifactKey: Guid(cea4362d9e3285c438205e566de36e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/source using Guid(cea4362d9e3285c438205e566de36e18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b01a59a3d9fe09127c35b1ce03335d17') in 0.004845 seconds 
+  Import took 0.006942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.810289 seconds.
+  path: Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures
+  artifactKey: Guid(d2c127668af1b2141bb2b38a12aead46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures using Guid(d2c127668af1b2141bb2b38a12aead46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2270760ad4dc6f90d5f12740465821f8') in 0.006076 seconds 
+  Import took 0.009048 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.053305 seconds.
+  path: Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Base_Color.png
+  artifactKey: Guid(f992cfe35240eac40b69b891edb3091b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Base_Color.png using Guid(f992cfe35240eac40b69b891edb3091b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78a6e445ed1950772cbd574056e785fe') in 0.042552 seconds 
+  Import took 0.045552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Mixed_AO.png
+  artifactKey: Guid(b8e3f76e84f942145969a3d5904c94b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Mixed_AO.png using Guid(b8e3f76e84f942145969a3d5904c94b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f75c732ea44c8d77c281f2af3cc67a28') in 0.011861 seconds 
+  Import took 0.014307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000536 seconds.
+  path: Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Emissive.png
+  artifactKey: Guid(51059a97aa40e3a42983a377d710277c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Emissive.png using Guid(51059a97aa40e3a42983a377d710277c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77622cb0277c1f3c2c607aec92d85490') in 0.012735 seconds 
+  Import took 0.015046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Height.png
+  artifactKey: Guid(64674a2a16f3f0f4d8e0dc0b57b9a0b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Height.png using Guid(64674a2a16f3f0f4d8e0dc0b57b9a0b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebec13b8eb9921d0f6a3eaa1871c1a15') in 0.014906 seconds 
+  Import took 0.017292 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Normal.png
+  artifactKey: Guid(b10d18df73a8f8843b9ad45258a4f1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Normal.png using Guid(b10d18df73a8f8843b9ad45258a4f1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ed875f3df22fdc81126524007be4245') in 0.012243 seconds 
+  Import took 0.015073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Roughness.png
+  artifactKey: Guid(de994810c88856a4e88a3fea19be1676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Roughness.png using Guid(de994810c88856a4e88a3fea19be1676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09356a167505477ff3f2ba7cdd126f30') in 0.011492 seconds 
+  Import took 0.013989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000260 seconds.
+  path: Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Metallic.png
+  artifactKey: Guid(d1145a60e33428742ae4d37b8a704481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Metallic.png using Guid(d1145a60e33428742ae4d37b8a704481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d009f114c7413a7bb3cfb4bbe5fadc1') in 0.020491 seconds 
+  Import took 0.022750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Normal_DirectX.png
+  artifactKey: Guid(e6e078d99cb5e3140b9f8c6e6629b72a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Normal_DirectX.png using Guid(e6e078d99cb5e3140b9f8c6e6629b72a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7371978b47107b0a24a0f43caa58a04') in 0.016186 seconds 
+  Import took 0.018752 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 49.254528 seconds.
+  path: Assets/Prefabs/Weapons/DC-15S.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/DC-15S.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae9d347003be0abf4a4917cf14f54ee0') in 0.018597 seconds 
+  Import took 0.021202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.320178 seconds.
+  path: Assets/Prefabs/Weapons/DC-15S.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/DC-15S.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa86977a0b8a2496a47c4e08a4088437') in 0.016529 seconds 
+  Import took 0.021933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.014765 seconds.
+  path: Assets/Prefabs/Weapons/DC-15S.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/DC-15S.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b49f3d06b4b57e49e01811a01a49e519') in 0.010972 seconds 
+  Import took 0.013833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.707284 seconds.
+  path: Assets/Prefabs/Weapons/Firearm1.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm1.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '7321e46f647bd96f37668786de720b6f') in 0.020747 seconds 
+  Import took 0.024138 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.186604 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1eda0c61bdbbf369cfbbb80fb62309d4') in 0.012527 seconds 
+  Import took 0.015089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.352518 seconds.
+  path: Assets/Prefabs/Weapons/Firearm1.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm1.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '2c2450f06842663a5b239886f0263d97') in 0.012341 seconds 
+  Import took 0.016023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.861870 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15bb3a0b8c493a7565aa5bb09cd1fdc4') in 0.013516 seconds 
+  Import took 0.016357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.044869 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '260e13747fe81f628b03e2fe9e68efd7') in 0.020675 seconds 
+  Import took 0.023707 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.970097 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3654b321b18fc59788607ea2b34b5f4') in 0.012719 seconds 
+  Import took 0.015164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.031363 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3049f06a42c13f91dd52004b3639b69b') in 0.013415 seconds 
+  Import took 0.016508 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.206367 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d896c76e4e16ae19b171a586422f35e') in 0.017963 seconds 
+  Import took 0.020630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.058908 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf103ed8a60e0496b622828443151c9c') in 0.018661 seconds 
+  Import took 0.021557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.587868 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dbdfb8e853edd17aedeef5bf12a1cdf') in 0.016040 seconds 
+  Import took 0.019398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.613796 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '893adeb26ddb23be3e29994ea95c846d') in 0.019175 seconds 
+  Import took 0.022454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.602826 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c897632910d744b09117fc98df9525') in 0.013640 seconds 
+  Import took 0.016170 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.738093 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96ec2ace838c1f5af1ce7d215fbcc538') in 0.016774 seconds 
+  Import took 0.020127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.026750 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daf51f75f4383bd1560b5a3ac712333e') in 0.014147 seconds 
+  Import took 0.017382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.284351 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5de9de52670c9424ee68d756ea19c669') in 0.014580 seconds 
+  Import took 0.017534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.836093 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3a42bb569d6cb8fe0553f3cce9a5965') in 0.008959 seconds 
+  Import took 0.011933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.988374 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b70c02fdc5f8b890560420646d38bc0') in 0.010460 seconds 
+  Import took 0.013742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.992143 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd2d1c95431b4e7924a8eb100f5d2c41') in 0.009828 seconds 
+  Import took 0.012518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.660831 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '168f9895f71b9786400eb36391655431') in 0.010387 seconds 
+  Import took 0.013472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.788531 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bddaf37bd5198511b1308886e1bd1d48') in 0.009356 seconds 
+  Import took 0.011969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.448642 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8144b82af4a88b89ea6ebc106abc44f5') in 0.014119 seconds 
+  Import took 0.017403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.392503 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28d8d9a3a8c63946fbed110ea072b5f') in 0.009927 seconds 
+  Import took 0.013187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.805331 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26b554836e2dd96eab33aa0d54cb1420') in 0.010180 seconds 
+  Import took 0.012961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.049068 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e30684c2f68f79fc24754572a59381') in 0.010528 seconds 
+  Import took 0.013827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.207876 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76a9f20a734b3a6f406edf5cdd360d82') in 0.010151 seconds 
+  Import took 0.012982 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.187514 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4642b5acdada4377a0e443b29bf608f') in 0.009961 seconds 
+  Import took 0.012597 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.044949 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0af16fc9d6002b5c58272231881b850') in 0.010292 seconds 
+  Import took 0.014258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.801415 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '558501527d7396cf1d12e4e3a1036e5a') in 0.010064 seconds 
+  Import took 0.012710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.601066 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4caca8b018c58e9703397666886b6314') in 0.013496 seconds 
+  Import took 0.016910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.245038 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd0afa73546fe186e16cc709938b6a21') in 0.010608 seconds 
+  Import took 0.013698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.794979 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99a3639a2fdeb7d768ed92a9c575a293') in 0.011058 seconds 
+  Import took 0.014177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.811920 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e7e95bd8dc79c96003f3b87fafdd941') in 0.014941 seconds 
+  Import took 0.018078 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.210497 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2131b434ae695072ac35465b8a5d436e') in 0.009586 seconds 
+  Import took 0.012499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.195487 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfeb7dec03c10650d3da432b9ced7653') in 0.015121 seconds 
+  Import took 0.017987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.803945 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57afe07f271ba3f73c62ef53c59ad345') in 0.012699 seconds 
+  Import took 0.015444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.015225 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '582c35a650558da34d1145c0a36eb4e3') in 0.015706 seconds 
+  Import took 0.019009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.242831 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'e89a964b4511c74f8aa34c816080a56a') in 0.013190 seconds 
+  Import took 0.016572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.964718 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '8be57c2b08871e0b094418c431d72d29') in 0.013818 seconds 
+  Import took 0.016612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.275849 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'eb50fa8073b08ae3379efa7002ef7c99') in 0.011506 seconds 
+  Import took 0.014428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.392025 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'bae49314fb5a9c31318e7d502c508753') in 0.009734 seconds 
+  Import took 0.012702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.002276 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '3027294124a27ffee603be0a09f6fc32') in 0.011585 seconds 
+  Import took 0.014735 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.587761 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '7ce0dbf982db0ea23775791f493b3992') in 0.010914 seconds 
+  Import took 0.013692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.405776 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'ef24f72c4787eba8320860c1a5d21466') in 0.013634 seconds 
+  Import took 0.017538 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.045350 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'c5b2a9e1760a9984d0fa98098579a4ed') in 0.011160 seconds 
+  Import took 0.013970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.884208 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '4e42f484629b132e704e9369e1d609c7') in 0.009893 seconds 
+  Import took 0.012788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.889499 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'b0c6b1c010904f3b70043385b4db02c3') in 0.010397 seconds 
+  Import took 0.012988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.299324 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '5a378a5be31e042726562b02142172c2') in 0.011868 seconds 
+  Import took 0.014778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.073047 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'c7935b6315c2b1732819b965e285b9cc') in 0.010322 seconds 
+  Import took 0.013259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.639887 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'c05787b9f42e30e3ebb4a37fdec3361a') in 0.012516 seconds 
+  Import took 0.015289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.605040 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'ad4a739236ac5788009d554d1bee44aa') in 0.009969 seconds 
+  Import took 0.012570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.294614 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '1ae1624f7cc70dca93d523919eb38363') in 0.011728 seconds 
+  Import took 0.014637 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.472405 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '05860d66c8802770d7a802adbf7c3322') in 0.011705 seconds 
+  Import took 0.014470 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.774027 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'ab870c9f5c7ac76c9a51510adea1e99d') in 0.014665 seconds 
+  Import took 0.017360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.776956 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '894259dbbb658b7569cf05113b39f1bc') in 0.011721 seconds 
+  Import took 0.014896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.835276 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'a21593f0df70e8f9da2625fbccf3452f') in 0.011331 seconds 
+  Import took 0.014226 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.112989 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.916 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1463 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.4 MB.
+System memory in use after: 84.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2035.
+Total: 2.605400 ms (FindLiveObjects: 0.176200 ms CreateObjectMapping: 0.054900 ms MarkObjects: 2.012500 ms  DeleteObjects: 0.360800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003327 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.905 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1463 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.5 MB.
+System memory in use after: 84.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2038.
+Total: 2.513500 ms (FindLiveObjects: 0.157300 ms CreateObjectMapping: 0.043800 ms MarkObjects: 1.973200 ms  DeleteObjects: 0.338200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 171.550227 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '5e1c0a8fdda329cb430a3abdeefb9d8a') in 0.085000 seconds 
+  Import took 0.088068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.612640 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '6a2da40611a55ae23f5708d96e04cd90') in 0.015392 seconds 
+  Import took 0.018583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.195002 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '07405a2649ffc03f3ddb1698c72432c8') in 0.012064 seconds 
+  Import took 0.015105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.378717 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '090de22363c714af83319fb3ecf4cee3') in 0.017371 seconds 
+  Import took 0.020808 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.569532 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '8013f342384ae2891a0732c80a2ff387') in 0.019810 seconds 
+  Import took 0.022602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.928009 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'ffdb3bc978109150a448064e896e1460') in 0.018923 seconds 
+  Import took 0.021994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.187302 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '24c5bc13e7b7c1899f56915dbafeccb4') in 0.011580 seconds 
+  Import took 0.014677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.283950 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '87e10cc9a6d411ec84aaed8c6a66a572') in 0.012088 seconds 
+  Import took 0.015169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.759981 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'cd19a2cd55c8719b538f11edeeb04969') in 0.012754 seconds 
+  Import took 0.015825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.651732 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '333137bd49b8941c99acd6dfaac3ea04') in 0.016580 seconds 
+  Import took 0.020046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.242002 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '4932c8562f4b1bcee54d79c4707e4d07') in 0.016770 seconds 
+  Import took 0.020295 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003091 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.885 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1463 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.5 MB.
+System memory in use after: 84.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2042.
+Total: 2.308500 ms (FindLiveObjects: 0.139800 ms CreateObjectMapping: 0.052900 ms MarkObjects: 1.777900 ms  DeleteObjects: 0.337100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 31.137185 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '47f4efdcc0af9cadf21b838c21f23665') in 0.068444 seconds 
+  Import took 0.071282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.334034 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '74c475fa6c656df66b15fe05b3538de5') in 0.012283 seconds 
+  Import took 0.015182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.319176 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(6ccadbe6c165245469c87fa2175ace59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'e45574fdb284b2c5b54a3c4d23072cea') in 0.016499 seconds 
+  Import took 0.020859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.883485 seconds.
+  path: Assets/Prefabs/Weapons/Firearm1.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm1.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '2d38857a1d80abcd07280b587832f764') in 0.012281 seconds 
+  Import took 0.016052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.422668 seconds.
+  path: Assets/Prefabs/Weapons/Firearm1.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm1.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '3f3da5cd798cda4f646371ab06302717') in 0.013548 seconds 
+  Import took 0.016374 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.722581 seconds.
+  path: Assets/Prefabs/Weapons/Firearm1.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm1.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '1cf1987034e75ca1afa5e6cb0315ec8e') in 0.015572 seconds 
+  Import took 0.018693 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.027480 seconds.
+  path: Assets/Prefabs/Weapons/Firearm1.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm1.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '6414a01d29cf3554fb7d49d08c8ea125') in 0.014957 seconds 
+  Import took 0.018011 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.048806 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '51f1c61545b5977a0f48f1f628aa08f6') in 0.012519 seconds 
+  Import took 0.016136 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.605249 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'f40469901cf12efbf9de0434e7e1b64e') in 0.012502 seconds 
+  Import took 0.016030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.768638 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '6c1632824528ab55f5567b1569f13697') in 0.012638 seconds 
+  Import took 0.016242 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003397 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.904 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1463 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.5 MB.
+System memory in use after: 84.3 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2046.
+Total: 2.308400 ms (FindLiveObjects: 0.147700 ms CreateObjectMapping: 0.047000 ms MarkObjects: 1.754800 ms  DeleteObjects: 0.357700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 85.013410 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '0fc7dc7c222f8ffeb6620e8b754acef7') in 0.060780 seconds 
+  Import took 0.063945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.428198 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '3477ce49e4cde127fefc9f3ca0bd19ff') in 0.011255 seconds 
+  Import took 0.014080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.487998 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'f661e57847660ab3c334f38e3a903f29') in 0.012573 seconds 
+  Import took 0.015439 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.996031 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'fa79293799351c545b708d41628f2fd6') in 0.011566 seconds 
+  Import took 0.014614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.293335 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'f289b47e3c50e58a8a1c7504776f9dba') in 0.011863 seconds 
+  Import took 0.014845 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003951 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.906 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1463 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.6 MB.
+System memory in use after: 84.3 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2050.
+Total: 2.288800 ms (FindLiveObjects: 0.138300 ms CreateObjectMapping: 0.052400 ms MarkObjects: 1.722200 ms  DeleteObjects: 0.374900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 277.101900 seconds.
+  path: Assets/Models/E5BlasterRifle/source
+  artifactKey: Guid(79b42aeb52d28ef48ba790c2d1041b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/E5BlasterRifle/source using Guid(79b42aeb52d28ef48ba790c2d1041b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7df1805d66c722cf333766b5bf462b91') in 0.009383 seconds 
+  Import took 0.012789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000453 seconds.
+  path: Assets/Models/E5BlasterRifle/source
+  artifactKey: Guid(79b42aeb52d28ef48ba790c2d1041b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/E5BlasterRifle/source using Guid(79b42aeb52d28ef48ba790c2d1041b77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7df1805d66c722cf333766b5bf462b91') in 0.003266 seconds 
+  Import took 0.006464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.038089 seconds.
+  path: Assets/Models/E5BlasterRifle/source/E-5_Blaster_Rifle.fbx
+  artifactKey: Guid(5d82f9afd8ea5104c8256b1260ff1354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/E5BlasterRifle/source/E-5_Blaster_Rifle.fbx using Guid(5d82f9afd8ea5104c8256b1260ff1354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9992b5a6fc98411ebdaa1d8323cd51') in 0.103817 seconds 
+  Import took 0.106302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.499348 seconds.
+  path: Assets/Models/E5BlasterRifle/textures/E-5 Blaster Rifle_E-5_mat_BaseColor.png
+  artifactKey: Guid(23848cb8487a9cc439c1f13ed51d194c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/E5BlasterRifle/textures/E-5 Blaster Rifle_E-5_mat_BaseColor.png using Guid(23848cb8487a9cc439c1f13ed51d194c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51d1854ffb7bed84eedda8c4d9a54a76') in 0.017086 seconds 
+  Import took 0.020199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/Models/E5BlasterRifle/textures/E-5 Blaster Rifle_E-5_mat_Metallic.png
+  artifactKey: Guid(cf5674f10f99def42a2737d025c2713a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/E5BlasterRifle/textures/E-5 Blaster Rifle_E-5_mat_Metallic.png using Guid(cf5674f10f99def42a2737d025c2713a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e7ea6e778b4eef2d62636146c968256') in 0.018245 seconds 
+  Import took 0.020601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000448 seconds.
+  path: Assets/Models/E5BlasterRifle/textures/E-5 Blaster Rifle_E-5_mat_Roughness.png
+  artifactKey: Guid(a46dd8b907127e949b5ef34f087d09a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/E5BlasterRifle/textures/E-5 Blaster Rifle_E-5_mat_Roughness.png using Guid(a46dd8b907127e949b5ef34f087d09a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2df3af6538634d90a2d62d66b6f5cfea') in 0.026612 seconds 
+  Import took 0.029051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 86.585056 seconds.
+  path: Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Normal.png
+  artifactKey: Guid(b10d18df73a8f8843b9ad45258a4f1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Normal.png using Guid(b10d18df73a8f8843b9ad45258a4f1ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98fd8c75417dcfdf34eaef00d428e5c9') in 0.023802 seconds 
+  Import took 0.026488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.146793 seconds.
+  path: Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Normal_DirectX.png
+  artifactKey: Guid(e6e078d99cb5e3140b9f8c6e6629b72a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/source/DC-15S_Textures/DC-15S_Normal_DirectX.png using Guid(e6e078d99cb5e3140b9f8c6e6629b72a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f25e572ce9d87a1bc0300a5cbc0f489c') in 0.016601 seconds 
+  Import took 0.020390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.050070 seconds.
+  path: Assets/Models/CloneTrooperCody/textures/21st_trooper_shoulderant.jpg
+  artifactKey: Guid(5922d230e21a5744f813e89216e5f0c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CloneTrooperCody/textures/21st_trooper_shoulderant.jpg using Guid(5922d230e21a5744f813e89216e5f0c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a39bbdf2ab9eede238b8fa8e6296c84e') in 0.020928 seconds 
+  Import took 0.023799 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Models/DC15sBlasterRifle/textures/DC-15S_Base_Color.png
+  artifactKey: Guid(d772a66d458e9d64fa25bcd961d5824a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/textures/DC-15S_Base_Color.png using Guid(d772a66d458e9d64fa25bcd961d5824a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '471502bc355a4b106925b478c38ca1a8') in 0.012049 seconds 
+  Import took 0.014469 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Standard Assets/Effects/TessellationShaders/Textures/CliffHeight.png
+  artifactKey: Guid(17da6d53ec93a0444bd0f751b1d02477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/TessellationShaders/Textures/CliffHeight.png using Guid(17da6d53ec93a0444bd0f751b1d02477) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '223fdae3410ab86d713245bd0c379604') in 0.019150 seconds 
+  Import took 0.021878 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000428 seconds.
+  path: Assets/Standard Assets/Effects/ImageEffects/Textures/HexShape.psd
+  artifactKey: Guid(a4cdca73d61814d33ac1587f6c163bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/ImageEffects/Textures/HexShape.psd using Guid(a4cdca73d61814d33ac1587f6c163bca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71cad0f62a484870863a0a117a0e0248') in 0.020621 seconds 
+  Import took 0.023403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000347 seconds.
+  path: Assets/Standard Assets/Effects/TessellationShaders/Textures/CliffNormals.png
+  artifactKey: Guid(e08c295755c0885479ad19f518286ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/TessellationShaders/Textures/CliffNormals.png using Guid(e08c295755c0885479ad19f518286ff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c51e28361275436d7ab1ceca40ce0415') in 0.026695 seconds 
+  Import took 0.029180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Standard Assets/Effects/LightFlares/Textures/FlareStar.psd
+  artifactKey: Guid(51dc82ef9d11c594d000e7c9e39e7c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/LightFlares/Textures/FlareStar.psd using Guid(51dc82ef9d11c594d000e7c9e39e7c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96d499c2f2a288746f3c8b1d9cb992fe') in 0.015230 seconds 
+  Import took 0.017852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Models/B1BattledroidEnemy/textures/B1Droid_Clean.png
+  artifactKey: Guid(68e9d1fe1ba7dad44bc8eab04a578dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/B1BattledroidEnemy/textures/B1Droid_Clean.png using Guid(68e9d1fe1ba7dad44bc8eab04a578dc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef88d74a0b7c61b5b586b5dd3882dae2') in 0.016625 seconds 
+  Import took 0.019277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Models/DroidekaEnemy/textures/Droideka_BaseColour copy.png
+  artifactKey: Guid(45ca32a378db9aa44ac2fa9a4b47224f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DroidekaEnemy/textures/Droideka_BaseColour copy.png using Guid(45ca32a378db9aa44ac2fa9a4b47224f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc2f9e15c92713af9402a21fe3e489e') in 0.017494 seconds 
+  Import took 0.020168 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/Models/CloneTrooperModel1/textures/helmet.jpg
+  artifactKey: Guid(e9f527ca9bf525044bab16f3fe2f5fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CloneTrooperModel1/textures/helmet.jpg using Guid(e9f527ca9bf525044bab16f3fe2f5fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f93a90f8dce3ab9f044741cdaa5a6a') in 0.017033 seconds 
+  Import took 0.019384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Models/DC15sBlasterRifle/textures/DC-15S_Emissive.png
+  artifactKey: Guid(84f21d97549350349a88e555795b12d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/textures/DC-15S_Emissive.png using Guid(84f21d97549350349a88e555795b12d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec8ee29d5fc153e3ae873881745c391') in 0.012514 seconds 
+  Import took 0.014832 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Models/B2BattledroidEnemy/textures/B2_Basecolour_3K.png
+  artifactKey: Guid(6d1b8e0d05b4b22418e2aedcd997a216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/B2BattledroidEnemy/textures/B2_Basecolour_3K.png using Guid(6d1b8e0d05b4b22418e2aedcd997a216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cc5a566e15af66d86ca0bd07179dd57') in 0.017676 seconds 
+  Import took 0.020093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Models/CommandoDroidEnemy/textures/Ambient_Occlusion_Map_from_Mesh_BX.png
+  artifactKey: Guid(6b1e31b908138304bac2fa86046a2006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CommandoDroidEnemy/textures/Ambient_Occlusion_Map_from_Mesh_BX.png using Guid(6b1e31b908138304bac2fa86046a2006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f4379ef042f3e5cfd902f81436ada12') in 0.020476 seconds 
+  Import took 0.022910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Models/DC15sBlasterRifle/textures/DC-15S_Height.png
+  artifactKey: Guid(b6233fbdaf3aa444ba2251fccbe0f216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/textures/DC-15S_Height.png using Guid(b6233fbdaf3aa444ba2251fccbe0f216) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d5fe23d907e0e1cc91c267d839d7ff0') in 0.010954 seconds 
+  Import took 0.013607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Standard Assets/Effects/ImageEffects/Textures/ContrastEnhanced3D16.png
+  artifactKey: Guid(ecd9a2c463dcb476891e43d7c9f16ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/ImageEffects/Textures/ContrastEnhanced3D16.png using Guid(ecd9a2c463dcb476891e43d7c9f16ffa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fa91eaca7ba92718bc284a2a23599b6') in 0.015296 seconds 
+  Import took 0.017747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Standard Assets/Effects/GlassRefraction/Textures/GlassStainedAlbedo.tif
+  artifactKey: Guid(19555d7d9d114c7f1100f5ab44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/GlassRefraction/Textures/GlassStainedAlbedo.tif using Guid(19555d7d9d114c7f1100f5ab44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23ea2909ed5b72a52941bb049fed5760') in 0.023293 seconds 
+  Import took 0.025811 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Models/DC15sBlasterRifle/textures/DC-15S_Metallic.png
+  artifactKey: Guid(7d4b62e0e3694634099c323a3e7285d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/textures/DC-15S_Metallic.png using Guid(7d4b62e0e3694634099c323a3e7285d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd64a632c9bee53034bc2b64369ab5f50') in 0.015656 seconds 
+  Import took 0.018227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Models/CommandoDroidEnemy/textures/FinalBake.png
+  artifactKey: Guid(b0cb2e909f876b741abfb3e2e22ae635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CommandoDroidEnemy/textures/FinalBake.png using Guid(b0cb2e909f876b741abfb3e2e22ae635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b50de9aaafe12763ad4c4f8b9aa2a65c') in 0.024110 seconds 
+  Import took 0.026689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Models/CloneTrooperCody/textures/hair.jpg
+  artifactKey: Guid(78f5c22abde2d7046a181cffcbf0a6c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CloneTrooperCody/textures/hair.jpg using Guid(78f5c22abde2d7046a181cffcbf0a6c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '026c6c6e99d8828204e33c1a63256cd5') in 0.019812 seconds 
+  Import took 0.022476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Standard Assets/Effects/ImageEffects/Textures/color correction ramp.png
+  artifactKey: Guid(d440902fad11e807d00044888d76c639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/ImageEffects/Textures/color correction ramp.png using Guid(d440902fad11e807d00044888d76c639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11f967b0b7f66d84a863bf202688b90e') in 0.016866 seconds 
+  Import took 0.019461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Standard Assets/Effects/LightCookies/Textures/LightHardCookie.psd
+  artifactKey: Guid(1167c0a28d11119930004d8a4241aa39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/LightCookies/Textures/LightHardCookie.psd using Guid(1167c0a28d11119930004d8a4241aa39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89ff831c5834433883f78aecc2bb22e1') in 0.018542 seconds 
+  Import took 0.021543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Standard Assets/Effects/ImageEffects/Textures/grayscale ramp.png
+  artifactKey: Guid(e9a9781cad112c75d0008dfa8d76c639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/ImageEffects/Textures/grayscale ramp.png using Guid(e9a9781cad112c75d0008dfa8d76c639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6dd4d51d36243dfceb4a08bf71f3a85') in 0.017216 seconds 
+  Import took 0.020080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Standard Assets/Effects/LightCookies/Textures/FlashlightCookie.tif
+  artifactKey: Guid(2c29c08dd1c0b6749b7cd0fcff7a29fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/LightCookies/Textures/FlashlightCookie.tif using Guid(2c29c08dd1c0b6749b7cd0fcff7a29fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6396c8247b3f281d60bceedb2f54699c') in 0.020494 seconds 
+  Import took 0.023553 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Standard Assets/Effects/GlassRefraction/Textures/GlassStainedNormals.tif
+  artifactKey: Guid(4b8d081e9d114c7f1100f5ab44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/GlassRefraction/Textures/GlassStainedNormals.tif using Guid(4b8d081e9d114c7f1100f5ab44295342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a6e7257e22a63376f2a436f96a9e46') in 0.021122 seconds 
+  Import took 0.024203 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Models/DC15sBlasterRifle/textures/DC-15S_Mixed_AO.png
+  artifactKey: Guid(63cf033d6eeacc54bb51ea764ef23feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/textures/DC-15S_Mixed_AO.png using Guid(63cf033d6eeacc54bb51ea764ef23feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ca767738cb83887646739b5db4f7f58') in 0.016646 seconds 
+  Import took 0.019394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Standard Assets/Effects/Projectors/Textures/Light.psd
+  artifactKey: Guid(b1d7fee26e54cc3498f6267f072a45b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/Projectors/Textures/Light.psd using Guid(b1d7fee26e54cc3498f6267f072a45b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ff3cdaed43befde5dc76214f01567b0') in 0.017448 seconds 
+  Import took 0.020328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Standard Assets/Effects/Projectors/Textures/Falloff.psd
+  artifactKey: Guid(23740055e2b119e40a939138ab8070f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/Projectors/Textures/Falloff.psd using Guid(23740055e2b119e40a939138ab8070f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a58d08dcc2eb83dddddc6738a5238c12') in 0.017346 seconds 
+  Import took 0.020229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Models/CloneTrooperCody/textures/helmet.jpg
+  artifactKey: Guid(187a7242d1585e942acdcea1c06fa936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CloneTrooperCody/textures/helmet.jpg using Guid(187a7242d1585e942acdcea1c06fa936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '311f966a301c9b34808035f47f65301c') in 0.022110 seconds 
+  Import took 0.025088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/Standard Assets/Effects/LightFlares/Textures/Flare50mm.psd
+  artifactKey: Guid(23a02ac18d11c9ffa0009c58a8ad6659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/LightFlares/Textures/Flare50mm.psd using Guid(23a02ac18d11c9ffa0009c58a8ad6659) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de154dfaa229a746c8724ea71fb51fcb') in 0.019840 seconds 
+  Import took 0.022775 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Models/CloneTrooperModel1/textures/clonehead.jpg
+  artifactKey: Guid(ee15701461b23914eaf006efbfc38172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CloneTrooperModel1/textures/clonehead.jpg using Guid(ee15701461b23914eaf006efbfc38172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfad5fa229f265fd1fd2f973818ebbc9') in 0.022165 seconds 
+  Import took 0.025122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/Models/CloneTrooperModel1/textures/hair.jpg
+  artifactKey: Guid(ec00eb04b4ec91745983a5cf8a4c2a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CloneTrooperModel1/textures/hair.jpg using Guid(ec00eb04b4ec91745983a5cf8a4c2a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ade4dc5d2322f8a1c716d37c80bb5b1c') in 0.015001 seconds 
+  Import took 0.017940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/Models/CloneTrooperCody/textures/clonehead.jpg
+  artifactKey: Guid(9db268810e6131e4f80c469c604821a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CloneTrooperCody/textures/clonehead.jpg using Guid(9db268810e6131e4f80c469c604821a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f7e891cb7bb66f13e5fd16821b30d8') in 0.027439 seconds 
+  Import took 0.030365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Models/DC15sBlasterRifle/textures/DC-15S_Roughness.png
+  artifactKey: Guid(38ba6a936c6cc61459b9bef9c7b7fe7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/DC15sBlasterRifle/textures/DC-15S_Roughness.png using Guid(38ba6a936c6cc61459b9bef9c7b7fe7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e942f36b9d7899793728ceb0fd6b8022') in 0.018551 seconds 
+  Import took 0.021473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Standard Assets/Effects/LightCookies/Textures/FlashlightIrregularCookie.tif
+  artifactKey: Guid(641bb2dce818a8a499b537a1963889ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/LightCookies/Textures/FlashlightIrregularCookie.tif using Guid(641bb2dce818a8a499b537a1963889ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5592810b8623c742d4b79749340f0f53') in 0.020547 seconds 
+  Import took 0.024148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/Standard Assets/Effects/Projectors/Textures/Grid.psd
+  artifactKey: Guid(529239097d02f9f42b0ddd436c6fcbb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Standard Assets/Effects/Projectors/Textures/Grid.psd using Guid(529239097d02f9f42b0ddd436c6fcbb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '906d59e3458d7b42660cc20da53d96bd') in 0.023074 seconds 
+  Import took 0.026185 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003422 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.907 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1463 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.7 MB.
+System memory in use after: 84.4 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2063.
+Total: 3.006500 ms (FindLiveObjects: 0.209000 ms CreateObjectMapping: 0.075400 ms MarkObjects: 2.237800 ms  DeleteObjects: 0.483200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 128.429988 seconds.
+  path: Assets/Prefabs/Enemy Death Effect.prefab
+  artifactKey: Guid(c04b2250767193749b8ff2cd781f7b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy Death Effect.prefab using Guid(c04b2250767193749b8ff2cd781f7b47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '612fd92291de19fc030c82631268a477') in 0.030917 seconds 
+  Import took 0.033406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.148266 seconds.
+  path: Assets/Prefabs/PowerUps
+  artifactKey: Guid(66362d7a78ef21242b52f1e61c7b9e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PowerUps using Guid(66362d7a78ef21242b52f1e61c7b9e8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c14c782189d13e02f26985e94cd1bfb1') in 0.007828 seconds 
+  Import took 0.010305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.406161 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'be20a431100b51c760ff9140768bce54') in 0.068742 seconds 
+  Import took 0.071619 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.463713 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'dd82f8e4fb0f28bee236debb32a04647') in 0.048222 seconds 
+  Import took 0.051109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.803577 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '68846c9d50545956b5d5618137af7721') in 0.028090 seconds 
+  Import took 0.031712 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.243099 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '4486f0a2411dcef7287cd39768b0c6d0') in 0.030835 seconds 
+  Import took 0.033923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.204187 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '254479789dec6efa000fd9420e12c2fd') in 0.029612 seconds 
+  Import took 0.032726 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.169587 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '6dd3b7e38e58171512b5eb10143f2cde') in 0.019350 seconds 
+  Import took 0.022636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 169.931533 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'a9087a9586cc520e28a823470524c1d3') in 0.017544 seconds 
+  Import took 0.020678 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003271 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.877 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1463 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.7 MB.
+System memory in use after: 84.5 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2067.
+Total: 2.152400 ms (FindLiveObjects: 0.140000 ms CreateObjectMapping: 0.051700 ms MarkObjects: 1.598800 ms  DeleteObjects: 0.361000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 26.994360 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'fbdaa354a5fe513cb60e2a4cd80dc4ea') in 0.081933 seconds 
+  Import took 0.084702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.727746 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '42f82b5e56e1b6451d0141844aa09d70') in 0.016478 seconds 
+  Import took 0.019601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.487160 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '735b95f95f4447557fa37bd5d5a35a06') in 0.017264 seconds 
+  Import took 0.020344 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.477471 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '716a30fd1cfdc89f14bf8b0787db4ce9') in 0.015866 seconds 
+  Import took 0.018797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.259991 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '13442c642a7dbb6393cc110d86ff0987') in 0.017799 seconds 
+  Import took 0.020936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.433434 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '0ab01e11103f8068575c0f9ae2556ce3') in 0.017606 seconds 
+  Import took 0.020500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.674481 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'd3655a8fd4523224c77f8f7b692bb909') in 0.015902 seconds 
+  Import took 0.018861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.234647 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '4ee8ae246f5615b4a6b264c97b1fd0f9') in 0.017266 seconds 
+  Import took 0.020556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.513466 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '97f2d7fddc932f53b96a81e2b6feafaa') in 0.021042 seconds 
+  Import took 0.024494 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.977290 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'f470a1effd438ff0ad148049d56a5b07') in 0.020539 seconds 
+  Import took 0.023681 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.621033 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '1d720de33083f73879b022fec2f10724') in 0.019074 seconds 
+  Import took 0.022165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.028271 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '1d720de33083f73879b022fec2f10724') in 0.021440 seconds 
+  Import took 0.024430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.789007 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'f1b3a302ab9f516f192d74b58e101648') in 0.017180 seconds 
+  Import took 0.020056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.388643 seconds.
+  path: Assets/Prefabs/Weapons/Firearm 1.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm 1.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'cd4c83b44272686d00690d91e60f15b7') in 0.013991 seconds 
+  Import took 0.016748 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.284647 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'ec97703cfd57569319aa796748a34c73') in 0.026411 seconds 
+  Import took 0.030328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.625253 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '3fbf8418a8079736783dd494a3f86d7b') in 0.021766 seconds 
+  Import took 0.025445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.228119 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '6b7580eeb91185da455642cfa801baf1') in 0.022548 seconds 
+  Import took 0.026037 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003358 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.975 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1463 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.7 MB.
+System memory in use after: 84.5 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2071.
+Total: 2.225000 ms (FindLiveObjects: 0.146700 ms CreateObjectMapping: 0.044700 ms MarkObjects: 1.683300 ms  DeleteObjects: 0.349400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 78.238986 seconds.
+  path: Assets/Prefabs/Weapons/Firearm.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Firearm.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'cf02823daf893697218ad47cb9322673') in 0.071682 seconds 
+  Import took 0.075091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.730140 seconds.
+  path: Assets/Prefabs/Weapons/DC15.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/DC15.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'f31b62a0ebd79a71bfa389c118ebb8af') in 0.028022 seconds 
+  Import took 0.032037 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.759262 seconds.
+  path: Assets/Prefabs/Weapons/E5.prefab
+  artifactKey: Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/E5.prefab using Guid(ee3f168c28d8db94698effc2dff48ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '06e3caf528570ff8921073c771dc51a0') in 0.022023 seconds 
+  Import took 0.025181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 332.391268 seconds.
+  path: Assets/Models/CloneTrooperModel1/textures
+  artifactKey: Guid(59d2b17d38be49f40aece6b9c1b4085b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CloneTrooperModel1/textures using Guid(59d2b17d38be49f40aece6b9c1b4085b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '896291a50b88e5d49cf81a81fc12c877') in 0.008185 seconds 
+  Import took 0.011141 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000682 seconds.
+  path: Assets/Models/CloneTrooperModel1/textures
+  artifactKey: Guid(59d2b17d38be49f40aece6b9c1b4085b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CloneTrooperModel1/textures using Guid(59d2b17d38be49f40aece6b9c1b4085b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '896291a50b88e5d49cf81a81fc12c877') in 0.003350 seconds 
+  Import took 0.005807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.331528 seconds.
+  path: Assets/Models/CloneTrooperModel1/source
+  artifactKey: Guid(905a9428c8a10924e9342a96cc0593fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CloneTrooperModel1/source using Guid(905a9428c8a10924e9342a96cc0593fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4dfb74a78ad73d9c5d66b14c664785') in 0.007577 seconds 
+  Import took 0.010528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000812 seconds.
+  path: Assets/Models/CloneTrooperModel1/source
+  artifactKey: Guid(905a9428c8a10924e9342a96cc0593fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CloneTrooperModel1/source using Guid(905a9428c8a10924e9342a96cc0593fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4dfb74a78ad73d9c5d66b14c664785') in 0.003807 seconds 
+  Import took 0.006623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.053799 seconds.
+  path: Assets/Models/CloneTrooperModel1/source/P1CloneReg.fbx
+  artifactKey: Guid(982cb85a6a76586478d1e9e243c6d439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CloneTrooperModel1/source/P1CloneReg.fbx using Guid(982cb85a6a76586478d1e9e243c6d439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '604dcb531608c9a16e496b0e3bc1e3f2') in 0.119151 seconds 
+  Import took 0.122082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 903.243372 seconds.
+  path: Assets/Models
+  artifactKey: Guid(cf9356fdc1ff8624ebee58df15155bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models using Guid(cf9356fdc1ff8624ebee58df15155bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b8c02182ef18897320d5a1a0c22615') in 0.007351 seconds 
+  Import took 0.010667 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001937 seconds.
+  path: Assets/Models
+  artifactKey: Guid(cf9356fdc1ff8624ebee58df15155bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models using Guid(cf9356fdc1ff8624ebee58df15155bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57b8c02182ef18897320d5a1a0c22615') in 0.003156 seconds 
+  Import took 0.005858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.033432 seconds.
+  path: Assets/Models/Charcters
+  artifactKey: Guid(f930550b62070864d9db0d0177c4db00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Charcters using Guid(f930550b62070864d9db0d0177c4db00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a3c3636ab5713089ccade951ee884a0') in 0.007669 seconds 
+  Import took 0.010577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.523957 seconds.
+  path: Assets/Models/B1BattledroidEnemy
+  artifactKey: Guid(1847e3a5009627f46b39a14c7e2d57fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/B1BattledroidEnemy using Guid(1847e3a5009627f46b39a14c7e2d57fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '611f68f2c66cc2e4f1d9eed83121d11c') in 0.007767 seconds 
+  Import took 0.010295 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001405 seconds.
+  path: Assets/Models/B1BattledroidEnemy
+  artifactKey: Guid(1847e3a5009627f46b39a14c7e2d57fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/B1BattledroidEnemy using Guid(1847e3a5009627f46b39a14c7e2d57fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '611f68f2c66cc2e4f1d9eed83121d11c') in 0.003020 seconds 
+  Import took 0.005338 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.137122 seconds.
+  path: Assets/Models/Weapons
+  artifactKey: Guid(36a0d0ca3f343c94a812a45379568b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Weapons using Guid(36a0d0ca3f343c94a812a45379568b7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cab4580253da2078499c72a14fe605d8') in 0.007009 seconds 
+  Import took 0.009621 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.441239 seconds.
+  path: Assets/Models/E5BlasterRifle
+  artifactKey: Guid(2eaea85e2e15a624a98ce7552dbfe6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/E5BlasterRifle using Guid(2eaea85e2e15a624a98ce7552dbfe6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fb6b1ae1ea449216e36482eb5136844') in 0.007458 seconds 
+  Import took 0.010304 seconds .
+
