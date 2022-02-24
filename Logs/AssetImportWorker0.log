@@ -276,3 +276,115 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002990 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.857 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1462 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 83.9 MB.
+System memory in use after: 83.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2001.
+Total: 2.002300 ms (FindLiveObjects: 0.132900 ms CreateObjectMapping: 0.036300 ms MarkObjects: 1.580600 ms  DeleteObjects: 0.251800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 604.372067 seconds.
+  path: Assets/Models/B1BattledroidEnemy
+  artifactKey: Guid(1847e3a5009627f46b39a14c7e2d57fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/B1BattledroidEnemy using Guid(1847e3a5009627f46b39a14c7e2d57fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '611f68f2c66cc2e4f1d9eed83121d11c') in 0.009911 seconds 
+  Import took 0.012541 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003609 seconds.
+  path: Assets/Models/B1BattledroidEnemy
+  artifactKey: Guid(1847e3a5009627f46b39a14c7e2d57fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/B1BattledroidEnemy using Guid(1847e3a5009627f46b39a14c7e2d57fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '611f68f2c66cc2e4f1d9eed83121d11c') in 0.003129 seconds 
+  Import took 0.006152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.011458 seconds.
+  path: Assets/Models/B1BattledroidEnemy/source
+  artifactKey: Guid(ef4889aa476f16e4f92b79134c815c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/B1BattledroidEnemy/source using Guid(ef4889aa476f16e4f92b79134c815c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15bf31a7369560d7e2d8a04612701610') in 0.007976 seconds 
+  Import took 0.010991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000991 seconds.
+  path: Assets/Models/B1BattledroidEnemy/source
+  artifactKey: Guid(ef4889aa476f16e4f92b79134c815c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/B1BattledroidEnemy/source using Guid(ef4889aa476f16e4f92b79134c815c2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15bf31a7369560d7e2d8a04612701610') in 0.002735 seconds 
+  Import took 0.006583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.031971 seconds.
+  path: Assets/Models/B1BattledroidEnemy/source/B1.fbx
+  artifactKey: Guid(2e9bef2c83681194c81c399d0d9f5305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/B1BattledroidEnemy/source/B1.fbx using Guid(2e9bef2c83681194c81c399d0d9f5305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dd2a70b9caf0bc8f91904852d81c794') in 0.137080 seconds 
+  Import took 0.139945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.972713 seconds.
+  path: Assets/Models/B2BattledroidEnemy/source/B21.fbx
+  artifactKey: Guid(62434d9859586164198717b906508015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/B2BattledroidEnemy/source/B21.fbx using Guid(62434d9859586164198717b906508015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02ddb924d2faf964c31a5064ea3526ee') in 0.051327 seconds 
+  Import took 0.054103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 857.538819 seconds.
+  path: Assets/Models/B2BattledroidEnemy/source/B21.fbx
+  artifactKey: Guid(62434d9859586164198717b906508015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/B2BattledroidEnemy/source/B21.fbx using Guid(62434d9859586164198717b906508015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75b9e4e98a87fd79075f1beede57d352') in 0.060549 seconds 
+  Import took 0.064876 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000322 seconds.
+  path: Assets/Models/B2BattledroidEnemy/source/B21@Standing Torch Run Forward.fbx
+  artifactKey: Guid(3f7b4d4551b6c4544acc63965010c0f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/B2BattledroidEnemy/source/B21@Standing Torch Run Forward.fbx using Guid(3f7b4d4551b6c4544acc63965010c0f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa2d58d158e9c926ad71215dc0daeb3a') in 0.086736 seconds 
+  Import took 0.090803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Models/B2BattledroidEnemy/source/B21.fbx
+  artifactKey: Guid(62434d9859586164198717b906508015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/B2BattledroidEnemy/source/B21.fbx using Guid(62434d9859586164198717b906508015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75b9e4e98a87fd79075f1beede57d352') in 0.075047 seconds 
+  Import took 0.078662 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.603880 seconds.
+  path: Assets/Models/CloneTrooperModel1/source/P1CloneReg.fbx
+  artifactKey: Guid(982cb85a6a76586478d1e9e243c6d439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/CloneTrooperModel1/source/P1CloneReg.fbx using Guid(982cb85a6a76586478d1e9e243c6d439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '604dcb531608c9a16e496b0e3bc1e3f2') in 0.152634 seconds 
+  Import took 0.156400 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
