@@ -13,9 +13,11 @@ public class Player : GameEntity {
     PlayerController playerController;
     GunController gunController;
     Spawner spawner;
-
+    int i;
+    int c;
     private void Awake()
     {
+       
         playerController = GetComponent<PlayerController>();
         gunController = GetComponent<GunController>();
         spawner = FindObjectOfType<Spawner>();
@@ -27,7 +29,41 @@ public class Player : GameEntity {
     {
         base.Start();
 
-        viewCamera = Camera.main;        
+        viewCamera = Camera.main;
+
+        i = gunController.weapons.Length - 1;
+    }
+
+    private void SwitchWeapon()
+    {
+        
+        if (Input.GetAxis("Mouse ScrollWheel") > 0) //scrolling up
+        {
+            c++;
+            if(c <= i)
+            {
+                gunController.EquipGun(c);
+            }
+            else
+            {
+                c = 0;
+                gunController.EquipGun(c);
+            }
+        }
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0)
+        {
+            c--;
+            if (c <= i && c != 0)
+            {
+                gunController.EquipGun(c);
+            }
+            else
+            {
+                c = i;
+                gunController.EquipGun(c);
+            }
+        }
+
     }
 
     private void OnNewWave(int waveNumber)
@@ -48,8 +84,10 @@ public class Player : GameEntity {
         base.TakeDamage(damage);
     }
 
-    void Update ()
+    void FixedUpdate ()
     {
+        SwitchWeapon();
+
         // Movement Input
         Vector3 moveInput = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         Vector3 moveVelocity = moveInput.normalized * moveSpeed;
