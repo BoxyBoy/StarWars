@@ -720,3 +720,139 @@ Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
  -> (artifact id: 'a3adaec86d017eb91a7918577c75963e') in 0.090631 seconds 
   Import took 0.094119 seconds .
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004214 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.242 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1463 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.4 MB.
+System memory in use after: 84.1 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2001.
+Total: 2.348900 ms (FindLiveObjects: 0.144500 ms CreateObjectMapping: 0.053800 ms MarkObjects: 1.798300 ms  DeleteObjects: 0.351100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 368.639773 seconds.
+  path: Assets/Scripts/Gun.cs
+  artifactKey: Guid(c43beef173400434585c9046cda1b597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gun.cs using Guid(c43beef173400434585c9046cda1b597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f891308a96d45b298b74435d57fb62e') in 0.015742 seconds 
+  Import took 0.018485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.551030 seconds.
+  path: Assets/Prefabs/Weapons/DC-15s.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/DC-15s.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '05c80b84742c9dc8ec5f5915865dff2d') in 0.079532 seconds 
+  Import took 0.082859 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Prefabs/Weapons/Jango Pistol.prefab
+  artifactKey: Guid(166458ea241c3144eb9e126e9936196d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Jango Pistol.prefab using Guid(166458ea241c3144eb9e126e9936196d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'ce6223d2a211482640599cd2b1ed995f') in 0.042989 seconds 
+  Import took 0.047047 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Prefabs/Weapons/DC17m.prefab
+  artifactKey: Guid(07777262c76ff0d4fa6ecbd82783d836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/DC17m.prefab using Guid(07777262c76ff0d4fa6ecbd82783d836) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'dad6749e7fd3e0a37dc13f0a1931e0d3') in 0.021497 seconds 
+  Import took 0.024373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000310 seconds.
+  path: Assets/Prefabs/Weapons/Westar.prefab
+  artifactKey: Guid(b114fbf1ab1bbd04f8fb6465d14e16d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Westar.prefab using Guid(b114fbf1ab1bbd04f8fb6465d14e16d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '688473f734ca085acd50e79b5fd24d09') in 0.022686 seconds 
+  Import took 0.026003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Prefabs/Weapons/E-5.prefab
+  artifactKey: Guid(3e15819598880f24c93ab49cdb940d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/E-5.prefab using Guid(3e15819598880f24c93ab49cdb940d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'adc1aa77da7f519dfd261ddee8d8fbe6') in 0.022225 seconds 
+  Import took 0.025287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.699978 seconds.
+  path: Assets/Prefabs/Weapons/DC17m.prefab
+  artifactKey: Guid(07777262c76ff0d4fa6ecbd82783d836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/DC17m.prefab using Guid(07777262c76ff0d4fa6ecbd82783d836) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '963df4876f3144a4e2e6a97b126b45e3') in 0.033233 seconds 
+  Import took 0.036387 seconds .
+

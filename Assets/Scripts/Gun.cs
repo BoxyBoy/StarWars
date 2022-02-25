@@ -8,6 +8,7 @@ public class Gun : MonoBehaviour {
     public enum FireMode { Auto, Burst, Single };
     public FireMode fireMode;
 
+
     public Transform[] projectileSpawn;
     public Projectile projectile;
 
@@ -15,6 +16,7 @@ public class Gun : MonoBehaviour {
     public float msBetweenShots = 100f;
     public float projectileVelocity = 35f;
     public float gunReloadTime = .3f; 
+    public int ammoCount;
     public int burstCount;
     public int projectilesPerMagazine;
 
@@ -69,50 +71,55 @@ public class Gun : MonoBehaviour {
 
     private void Shoot()
     {
-        if (!isReloading && Time.time > nextShotTime && projectilesRemainingInMagazine > 0)
+        if(ammoCount != 0)
         {
-            if (fireMode == FireMode.Burst)
+            if (!isReloading && Time.time > nextShotTime && projectilesRemainingInMagazine > 0)
             {
-                if (shotsRemainingInBurst == 0)
+                if (fireMode == FireMode.Burst)
                 {
-                    return;
+                    if (shotsRemainingInBurst == 0)
+                    {
+                        return;
+                    }
+                    ammoCount--;
+                    shotsRemainingInBurst--;
                 }
-                shotsRemainingInBurst--;
-            }
-            else if (fireMode == FireMode.Single)
-            {
-                if (!triggerReleasedSinceLastShot)
+                else if (fireMode == FireMode.Single)
                 {
-                    return;
-                }
-            }
-
-            for (int i = 0; i < projectileSpawn.Length; i++)
-            {
-                if (projectilesRemainingInMagazine == 0)
-                {
-                    break;
+                    if (!triggerReleasedSinceLastShot)
+                    {
+                        return;
+                    }
                 }
 
-                // Remove projectile from gun magazine
-                projectilesRemainingInMagazine--;
+                for (int i = 0; i < projectileSpawn.Length; i++)
+                {
+                    if (projectilesRemainingInMagazine == 0)
+                    {
+                        break;
+                    }
 
-                nextShotTime = Time.time + msBetweenShots / 1000;
-                Projectile newProjectile = Instantiate(projectile, projectileSpawn[i].position, projectileSpawn[i].rotation) as Projectile;
-                newProjectile.SetSpeed(projectileVelocity);
+                    // Remove projectile from gun magazine
+                    ammoCount--;
+                    projectilesRemainingInMagazine--;
+
+                    nextShotTime = Time.time + msBetweenShots / 1000;
+                    Projectile newProjectile = Instantiate(projectile, projectileSpawn[i].position, projectileSpawn[i].rotation) as Projectile;
+                    newProjectile.SetSpeed(projectileVelocity);
+                }
+
+                // Shell and muzzle flash should only happen once (don't want to be too excesive)
+                Instantiate(shell, shellEjection.position, shellEjection.rotation);
+                muzzleFlash.Activate();
+
+                // Gun recoil
+                transform.localPosition -= Vector3.forward * Random.Range(kickMinMax.x, kickMinMax.y);
+                recoilAngle += Random.Range(recoilAngleMinMax.x, recoilAngleMinMax.y);
+                recoilAngle = Mathf.Clamp(recoilAngle, 0f, 30f);
+
+                // Audio Manager
+                AudioManager.instance.PlaySound(shootAudio, transform.position);
             }
-
-            // Shell and muzzle flash should only happen once (don't want to be too excesive)
-            Instantiate(shell, shellEjection.position, shellEjection.rotation);
-            muzzleFlash.Activate();
-
-            // Gun recoil
-            transform.localPosition -= Vector3.forward * Random.Range(kickMinMax.x, kickMinMax.y);
-            recoilAngle += Random.Range(recoilAngleMinMax.x, recoilAngleMinMax.y);
-            recoilAngle = Mathf.Clamp(recoilAngle, 0f, 30f);
-
-            // Audio Manager
-            AudioManager.instance.PlaySound(shootAudio, transform.position);
         }
     }
 
