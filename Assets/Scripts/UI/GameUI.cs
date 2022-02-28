@@ -14,6 +14,7 @@ public class GameUI : MonoBehaviour {
     public Text scoreUI;
     public Text gameOverScoreUI;
     public RectTransform healthBar;
+    public RectTransform shieldBar;
 
     Player player;
     Spawner spawner;
@@ -39,6 +40,13 @@ public class GameUI : MonoBehaviour {
             healthPercent = player.health / player.initialHealth;
         }
         healthBar.localScale = new Vector3(healthPercent, 1f, 1f);
+
+        float shieldPercent = 0f;
+        if (player != null)
+        {
+            shieldPercent = player.shield / player.maxShield;
+        }
+        shieldBar.localScale = new Vector3(shieldPercent, 1f, 1f);
     }
 
     private void OnNewWave(int waveNumber)
