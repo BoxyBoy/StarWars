@@ -3,11 +3,12 @@
 public class GameEntity : MonoBehaviour, IDamageable
 {
     public float initialHealth;
-    public float maxShield = 5;
+    public float maxShield = 100;
 
     public event System.Action OnDeath;
 
     public float health { get; set; }
+   
     public float shield { get; set; }
     protected bool dead;
 

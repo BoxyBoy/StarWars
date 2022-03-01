@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameUI : MonoBehaviour {
 
@@ -15,6 +16,8 @@ public class GameUI : MonoBehaviour {
     public Text gameOverScoreUI;
     public RectTransform healthBar;
     public RectTransform shieldBar;
+    public Text ammoText;
+
 
     Player player;
     Spawner spawner;
@@ -23,17 +26,21 @@ public class GameUI : MonoBehaviour {
     {
         spawner = FindObjectOfType<Spawner>();
         spawner.OnNewWave += OnNewWave;
+       
     }
 
     private void Start () {
         player = FindObjectOfType<Player>();
         player.OnDeath += OnGameOver;
+        
 	}
 
     private void Update()
     {
-        scoreUI.text = ScoreManager.score.ToString("D6");
 
+        scoreUI.text = ScoreManager.score.ToString("D6");
+        ammoText.text = "Ammo: " + player.gunController.equippedGun.projectilesRemainingInMagazine + "/" + player.gunController.equippedGun.ammoCount.ToString();
+        
         float healthPercent = 0f;
         if (player != null)
         {

@@ -39,7 +39,7 @@ public class Gun : MonoBehaviour {
     bool isReloading;
 
     int shotsRemainingInBurst;
-    int projectilesRemainingInMagazine;
+    public int projectilesRemainingInMagazine;
 
     MuzzleFlash muzzleFlash;
 
@@ -81,7 +81,7 @@ public class Gun : MonoBehaviour {
                     {
                         return;
                     }
-                    ammoCount--;
+                    
                     shotsRemainingInBurst--;
                 }
                 else if (fireMode == FireMode.Single)
@@ -100,7 +100,7 @@ public class Gun : MonoBehaviour {
                     }
 
                     // Remove projectile from gun magazine
-                    ammoCount--;
+                    ammoCount-= burstCount;
                     projectilesRemainingInMagazine--;
 
                     nextShotTime = Time.time + msBetweenShots / 1000;
