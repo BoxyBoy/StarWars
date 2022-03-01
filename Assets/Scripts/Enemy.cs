@@ -13,6 +13,9 @@ public class Enemy : GameEntity {
     [Header("Enemy Main Settings")]
     public bool canAttackPlayer = true;
     public bool rangedAttacker = false;
+    public float attackRate = 0.5f;
+    public float attackDistance = 3f;
+    public Transform firePoint;
 
     [Header("Enemy Navigation Settings")]
     public float agentPathRefreshRate = 1.0f;
@@ -31,10 +34,12 @@ public class Enemy : GameEntity {
     float attackDistanceThreshold = .5f;
     float timeBetweenAttacks = 1f;
     float damage = 1f;
-    float nextAttackTime;
+    float nextAttackTime = 0;
     float myCollisionRadius;
     float targetCollisionRadius;
     bool hasTarget;
+
+
 
     private void Awake()
     {
@@ -108,17 +113,19 @@ public class Enemy : GameEntity {
                     else
                     {
                         AudioManager.instance.PlaySound("Enemy Attack", transform.position);
-                        RangedAttack();
+                       // RangedAttack();
                     }
                 }
             }
         }
     }
 
-    private void RangedAttack()
+    //need to come up with a way to keep enemies away from plyer maybe easier to make a script that this will pull from 
+
+   /* private void RangedAttack()
     {
         
-    }
+    }*/
 
     IEnumerator Attack()
     {

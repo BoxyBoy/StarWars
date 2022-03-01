@@ -16,7 +16,7 @@ public class Gun : MonoBehaviour {
     public float msBetweenShots = 100f;
     public float projectileVelocity = 35f;
     public float gunReloadTime = .3f; 
-    public int ammoCount;
+    public int ammoCount = 250;
     public int burstCount;
     public int projectilesPerMagazine;
 

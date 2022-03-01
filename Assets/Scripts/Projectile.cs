@@ -59,7 +59,7 @@ public class Projectile : MonoBehaviour {
 
         if ("Enemy" == collision.gameObject.tag)
         {
-            OnHitObject(collision.collider,Vector3.forward);
+            OnHitObject(collision.collider, collision.gameObject.transform.position);
 
             Destroy(this.gameObject);
            // Destroy(collision.gameObject);
