@@ -12,6 +12,7 @@ public class Enemy : GameEntity {
 
     [Header("Enemy Main Settings")]
     public bool canAttackPlayer = true;
+    public bool rangedAttacker = false;
 
     [Header("Enemy Navigation Settings")]
     public float agentPathRefreshRate = 1.0f;
@@ -99,11 +100,24 @@ public class Enemy : GameEntity {
                 nextAttackTime = Time.time + timeBetweenAttacks;
                 if (canAttackPlayer)
                 {
-                    AudioManager.instance.PlaySound("Enemy Attack", transform.position);
-                    StartCoroutine(Attack());
+                    if(rangedAttacker == false)
+                    {
+                        AudioManager.instance.PlaySound("Enemy Attack", transform.position);
+                        StartCoroutine(Attack());
+                    }
+                    else
+                    {
+                        AudioManager.instance.PlaySound("Enemy Attack", transform.position);
+                        RangedAttack();
+                    }
                 }
             }
         }
+    }
+
+    private void RangedAttack()
+    {
+        
     }
 
     IEnumerator Attack()

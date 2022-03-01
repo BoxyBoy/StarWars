@@ -3,7 +3,7 @@
 public class GameEntity : MonoBehaviour, IDamageable
 {
     public float initialHealth;
-    public float maxShield;
+    public float maxShield = 5;
 
     public event System.Action OnDeath;
 
