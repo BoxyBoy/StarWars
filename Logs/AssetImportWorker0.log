@@ -1,74 +1,74 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19044.1526; Version 2009; 64bit' Language: 'en' Physical Memory: 32198 MB
+OS: 'Windows 10 Pro; OS build 19042.1466; Version 2009; 64bit' Language: 'en' Physical Memory: 31837 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.12f1\Editor\Unity.exe
+C:\UnityStuff\2020.3.12f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Zach/Documents/GitHub/StarWars
+C:/Users/Sebastian/Documents/Existing Code/StarWars/ExistingCode
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63366
-Successfully changed project path to: C:/Users/Zach/Documents/GitHub/StarWars
-C:/Users/Zach/Documents/GitHub/StarWars
+62619
+Successfully changed project path to: C:/Users/Sebastian/Documents/Existing Code/StarWars/ExistingCode
+C:/Users/Sebastian/Documents/Existing Code/StarWars/ExistingCode
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 42.55 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 34.24 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Zach/Documents/GitHub/StarWars/Assets
+[Subsystems] Discovering subsystems at path C:/UnityStuff/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Sebastian/Documents/Existing Code/StarWars/ExistingCode/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA Quadro T2000 (ID=0x1fb8)
+    Renderer: Intel(R) UHD Graphics 630 (ID=0x3e9b)
     Vendor:   
-    VRAM:     3962 MB
-    Driver:   30.0.14.7234
+    VRAM:     15918 MB
+    Driver:   27.20.100.9316
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56548
+Mono path[0] = 'C:/UnityStuff/2020.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/UnityStuff/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/UnityStuff/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56312
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002153 seconds.
+Register platform support module: C:/UnityStuff/2020.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/UnityStuff/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003589 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 30.65 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 47.80 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.241 seconds
+- Completed reload, in  2.155 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003574 seconds.
+Registered in 0.004033 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.971 seconds
+- Completed reload, in  1.188 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1544 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.6 MB.
-System memory in use after: 88.3 MB.
+System memory in use before: 88.4 MB.
+System memory in use after: 88.2 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 1981.
-Total: 2.157500 ms (FindLiveObjects: 0.136500 ms CreateObjectMapping: 0.052800 ms MarkObjects: 1.651000 ms  DeleteObjects: 0.316300 ms)
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1982.
+Total: 2.236800 ms (FindLiveObjects: 0.177300 ms CreateObjectMapping: 0.056200 ms MarkObjects: 1.726600 ms  DeleteObjects: 0.275500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -77,70 +77,426 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: e54d7ab0439102e2317fc1e4b246158d -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Audio/Music/Music from the Dark Side - Stronger Than Fate.mp3
-  artifactKey: Guid(faeaa85ade8d2d245a276581682f7835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Music/Music from the Dark Side - Stronger Than Fate.mp3 using Guid(faeaa85ade8d2d245a276581682f7835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ffee6cb3ebe72169e8af15a5706a4b') in 0.098040 seconds 
-  Import took 0.100638 seconds .
+  path: Assets/Scripts/Gun.cs
+  artifactKey: Guid(c43beef173400434585c9046cda1b597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Gun.cs using Guid(c43beef173400434585c9046cda1b597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04ea479cb8ec29352b0f99bddfa8f20a') in 0.033894 seconds 
+  Import took 0.036187 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000291 seconds.
-  path: Assets/Audio/Music/Jedi temple march loop [marching sound edit].mp3
-  artifactKey: Guid(abef4b940b1095c498884e70441a247f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Music/Jedi temple march loop [marching sound edit].mp3 using Guid(abef4b940b1095c498884e70441a247f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4b04ec8f37f80b9eeed37e611a9419a') in 0.011672 seconds 
-  Import took 0.014149 seconds .
+  Time since last request: 211.900426 seconds.
+  path: Assets/Scripts/PowerUps/ShieldPowerUp.cs
+  artifactKey: Guid(4deeb4a32052210488ae24ae5942e376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PowerUps/ShieldPowerUp.cs using Guid(4deeb4a32052210488ae24ae5942e376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '559f48ba5d3b0013b228bc2616631d30') in 0.013210 seconds 
+  Import took 0.016868 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000267 seconds.
-  path: Assets/Audio/Music/Star Wars - Order 66 Sad Music Mix _ I'm So Sorry & Anakin's Betrayal.mp3
-  artifactKey: Guid(52cbd3d86802e14488dac748be100c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Music/Star Wars - Order 66 Sad Music Mix _ I'm So Sorry & Anakin's Betrayal.mp3 using Guid(52cbd3d86802e14488dac748be100c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67da41aea384f89a643df9423b63f091') in 0.015749 seconds 
-  Import took 0.018312 seconds .
+  Time since last request: 1.745510 seconds.
+  path: Assets/Scripts/PowerUps/ShieldPowerUp1.cs
+  artifactKey: Guid(fe7b7af7269b34d479c3c92e14191298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PowerUps/ShieldPowerUp1.cs using Guid(fe7b7af7269b34d479c3c92e14191298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaff89aed9be38c02c363be09c7402eb') in 0.010587 seconds 
+  Import took 0.014081 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002915 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.880 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1464 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.8 MB.
+System memory in use after: 80.6 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1986.
+Total: 1.709800 ms (FindLiveObjects: 0.123000 ms CreateObjectMapping: 0.037700 ms MarkObjects: 1.326900 ms  DeleteObjects: 0.221400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 310.327155 seconds.
+  path: Assets/Scripts/PowerUps/ShieldPowerUp1.cs
+  artifactKey: Guid(fe7b7af7269b34d479c3c92e14191298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PowerUps/ShieldPowerUp1.cs using Guid(fe7b7af7269b34d479c3c92e14191298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be9946a776ecbcec9782475aa24b280e') in 0.007207 seconds 
+  Import took 0.009473 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/Audio/Music/Star Wars Sith Symphony - Darth Nihilus _ Piano & Orchestra.mp3
-  artifactKey: Guid(195d890260200ef4981559b8ef1d129f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Music/Star Wars Sith Symphony - Darth Nihilus _ Piano & Orchestra.mp3 using Guid(195d890260200ef4981559b8ef1d129f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76693ef4eac1430dacd5a1aac456b6f4') in 0.012690 seconds 
-  Import took 0.015343 seconds .
+  Time since last request: 7.135997 seconds.
+  path: Assets/Scripts/PowerUps/NewBehaviourScript.cs
+  artifactKey: Guid(ec5315a7408cd7240af0338a6470cc28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PowerUps/NewBehaviourScript.cs using Guid(ec5315a7408cd7240af0338a6470cc28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54d4e0d42a23fbca2b9b088929742999') in 0.008584 seconds 
+  Import took 0.011841 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004501 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.158 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1464 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.8 MB.
+System memory in use after: 80.6 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1989.
+Total: 2.201600 ms (FindLiveObjects: 0.167200 ms CreateObjectMapping: 0.047000 ms MarkObjects: 1.698500 ms  DeleteObjects: 0.287800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 17.748090 seconds.
+  path: Assets/Scripts/PowerUps/AmmoPowerUp.cs
+  artifactKey: Guid(fe7b7af7269b34d479c3c92e14191298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PowerUps/AmmoPowerUp.cs using Guid(fe7b7af7269b34d479c3c92e14191298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '983b4c2482aacfa720f5635bc5843f7e') in 0.010666 seconds 
+  Import took 0.013586 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004618 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.208 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1464 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 80.9 MB.
+System memory in use after: 80.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1992.
+Total: 2.503600 ms (FindLiveObjects: 0.169800 ms CreateObjectMapping: 0.055100 ms MarkObjects: 1.945900 ms  DeleteObjects: 0.331800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 29.018834 seconds.
+  path: Assets/Prefabs/Weapons/DC-15s.prefab
+  artifactKey: Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/DC-15s.prefab using Guid(2d2ae3c02d20bd04f92e890ab941d9cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '913ba7ba8e2d68df6f50645bfdebb560') in 0.396564 seconds 
+  Import took 0.400268 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Audio/Music/Star Wars - Ahsoka and Rex Theme (Order 66) _ The Clone Wars Soundtrack.mp3
-  artifactKey: Guid(087c53bd676e69345a5c9cd191b2bac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Music/Star Wars - Ahsoka and Rex Theme (Order 66) _ The Clone Wars Soundtrack.mp3 using Guid(087c53bd676e69345a5c9cd191b2bac2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ed679dd73823a7bbb32e0ecb256e924') in 0.012574 seconds 
-  Import took 0.015197 seconds .
+  Time since last request: 0.000245 seconds.
+  path: Assets/Prefabs/Weapons/Jango Pistol.prefab
+  artifactKey: Guid(166458ea241c3144eb9e126e9936196d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Jango Pistol.prefab using Guid(166458ea241c3144eb9e126e9936196d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '7a9e64c682667c993631f73a91d1d522') in 0.313024 seconds 
+  Import took 0.316367 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000302 seconds.
-  path: Assets/Audio/Music/The Battle of Geonosis.mp3
-  artifactKey: Guid(60cf066d73ef7cd4dbbed2270a96f5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Music/The Battle of Geonosis.mp3 using Guid(60cf066d73ef7cd4dbbed2270a96f5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daf84b213a552c967bbf3d1d82802ac8') in 0.013388 seconds 
-  Import took 0.016095 seconds .
+  Time since last request: 0.000260 seconds.
+  path: Assets/Prefabs/Weapons/WESTAR-34.obj
+  artifactKey: Guid(a65bd9c42f98a2d43a6dd08c86e37a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/WESTAR-34.obj using Guid(a65bd9c42f98a2d43a6dd08c86e37a66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af0d1e064eca1a8fcefe86925319f623') in 0.078860 seconds 
+  Import took 0.081269 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/Audio/Music/Star Wars CW Season 3 (Attack on kamino).mp3
-  artifactKey: Guid(39aefb2d7ae4c9d4abb4397e724bc349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Music/Star Wars CW Season 3 (Attack on kamino).mp3 using Guid(39aefb2d7ae4c9d4abb4397e724bc349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce9cd1193233ce04ee20d1512a3cc744') in 0.013562 seconds 
-  Import took 0.016278 seconds .
+  Time since last request: 0.000250 seconds.
+  path: Assets/Prefabs/Weapons/Dual Westar-35.obj
+  artifactKey: Guid(6c4d53ff0d86f4a49bc69a2eb787df40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Dual Westar-35.obj using Guid(6c4d53ff0d86f4a49bc69a2eb787df40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b2698a202d054a73335f869c3d54bc') in 0.083505 seconds 
+  Import took 0.085820 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.006044 seconds.
-  path: Assets/Audio/Music/The Battle of Geonosis.mp3
-  artifactKey: Guid(60cf066d73ef7cd4dbbed2270a96f5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/Music/The Battle of Geonosis.mp3 using Guid(60cf066d73ef7cd4dbbed2270a96f5e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daf84b213a552c967bbf3d1d82802ac8') in 0.012316 seconds 
-  Import took 0.015311 seconds .
+  Time since last request: 0.000235 seconds.
+  path: Assets/Prefabs/Weapons/E-5_Blaster_Rifle.fbx
+  artifactKey: Guid(5d82f9afd8ea5104c8256b1260ff1354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/E-5_Blaster_Rifle.fbx using Guid(5d82f9afd8ea5104c8256b1260ff1354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffce2ee338caa50e38180948ddc0eadf') in 0.034937 seconds 
+  Import took 0.037157 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/Prefabs/Weapons/DC17m.prefab
+  artifactKey: Guid(07777262c76ff0d4fa6ecbd82783d836) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/DC17m.prefab using Guid(07777262c76ff0d4fa6ecbd82783d836) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '9a8d75de5a3a5c9325a9579bb5ff4ef1') in 0.047526 seconds 
+  Import took 0.050358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Prefabs/Weapons/Westar.prefab
+  artifactKey: Guid(b114fbf1ab1bbd04f8fb6465d14e16d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Westar.prefab using Guid(b114fbf1ab1bbd04f8fb6465d14e16d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: '4baf04828eecc1997c802d25a3aeb7a0') in 0.027792 seconds 
+  Import took 0.030591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Prefabs/Weapons/Sketchfab_2020_09_15_20_46_46.fbx
+  artifactKey: Guid(46b9650049ca23b41ae4fc65dc4969da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Sketchfab_2020_09_15_20_46_46.fbx using Guid(46b9650049ca23b41ae4fc65dc4969da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5b62c2c42b8757e4d89b76beaaec5c5') in 0.036526 seconds 
+  Import took 0.038932 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Prefabs/Weapons/E-5.prefab
+  artifactKey: Guid(3e15819598880f24c93ab49cdb940d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/E-5.prefab using Guid(3e15819598880f24c93ab49cdb940d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) You are trying to create a MonoBehaviour using the 'new' keyword.  This is not allowed.  MonoBehaviours can only be added using AddComponent(). Alternatively, your script can inherit from ScriptableObject or no base class at all
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.MonoBehaviour:.ctor ()
+ScoreManager:.ctor () (at Assets/Scripts/Game/ScoreManager.cs:11)
+Projectile:.ctor () (at Assets/Scripts/Projectile.cs:11)
+
+[Assets/Scripts/Game/ScoreManager.cs line 11]
+
+ -> (artifact id: 'dfe064564a42d077392ae7c7f7b5906c') in 0.253768 seconds 
+  Import took 0.256164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.259557 seconds.
+  path: Assets/Prefabs/PowerUps/ShieldPowerUp 1.prefab
+  artifactKey: Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PowerUps/ShieldPowerUp 1.prefab using Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fef362efd76fcb0f235edfdb0cbdeb1') in 0.014068 seconds 
+  Import took 0.016757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.014413 seconds.
+  path: Assets/Prefabs/PowerUps/ShieldPowerUp 1.prefab
+  artifactKey: Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PowerUps/ShieldPowerUp 1.prefab using Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fef362efd76fcb0f235edfdb0cbdeb1') in 0.008687 seconds 
+  Import took 0.011229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.234479 seconds.
+  path: Assets/Prefabs/PowerUps/AmmoPowerUp.prefab
+  artifactKey: Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PowerUps/AmmoPowerUp.prefab using Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24d03cb29b53dd85ccc0d2d995389222') in 0.011067 seconds 
+  Import took 0.014835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013782 seconds.
+  path: Assets/Prefabs/PowerUps/AmmoPowerUp.prefab
+  artifactKey: Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PowerUps/AmmoPowerUp.prefab using Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24d03cb29b53dd85ccc0d2d995389222') in 0.009102 seconds 
+  Import took 0.011723 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.762410 seconds.
+  path: Assets/Prefabs/PowerUps/AmmoPowerUp.prefab
+  artifactKey: Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PowerUps/AmmoPowerUp.prefab using Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8486599da92df6ec38329d6584e027a') in 0.011467 seconds 
+  Import took 0.015507 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000504 seconds.
+  path: Assets/Prefabs/PowerUps/AmmoPowerUp.prefab
+  artifactKey: Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PowerUps/AmmoPowerUp.prefab using Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8486599da92df6ec38329d6584e027a') in 0.009302 seconds 
+  Import took 0.012159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.528059 seconds.
+  path: Assets/Prefabs/PowerUps/AmmoPowerUp.prefab
+  artifactKey: Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PowerUps/AmmoPowerUp.prefab using Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e6f1f15a612c5e8d066df21e5004d1') in 0.009080 seconds 
+  Import took 0.011803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.013496 seconds.
+  path: Assets/Prefabs/PowerUps/AmmoPowerUp.prefab
+  artifactKey: Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PowerUps/AmmoPowerUp.prefab using Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e6f1f15a612c5e8d066df21e5004d1') in 0.008078 seconds 
+  Import took 0.011215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.405298 seconds.
+  path: Assets/Prefabs/PowerUps/AmmoPowerUp.prefab
+  artifactKey: Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PowerUps/AmmoPowerUp.prefab using Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ff17f5ec48dbda693ac5ef96e9c29f7') in 0.009493 seconds 
+  Import took 0.013397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.363866 seconds.
+  path: Assets/Materials/geonosisSand.mat
+  artifactKey: Guid(4f98be82785c0624fb19985a452eb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/geonosisSand.mat using Guid(4f98be82785c0624fb19985a452eb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e61f4d6322a13f7c60757de5fca1035b') in 0.017605 seconds 
+  Import took 0.021058 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000398 seconds.
+  path: Assets/Materials/KaminoMaterial.mat
+  artifactKey: Guid(d805abdae2160ea4583f1630fe616c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/KaminoMaterial.mat using Guid(d805abdae2160ea4583f1630fe616c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7d046b7d10fdca768cac2ad8f8454d') in 0.022475 seconds 
+  Import took 0.025588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000448 seconds.
+  path: Assets/Materials/NewLayer.terrainlayer
+  artifactKey: Guid(d555e9053756bdd48a356c2d4488d544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/NewLayer.terrainlayer using Guid(d555e9053756bdd48a356c2d4488d544) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3fed54a8f120825383d4418e50c192e') in 0.018995 seconds 
+  Import took 0.021792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Materials/KaminoMaterial.mat
+  artifactKey: Guid(d805abdae2160ea4583f1630fe616c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/KaminoMaterial.mat using Guid(d805abdae2160ea4583f1630fe616c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7d046b7d10fdca768cac2ad8f8454d') in 0.011647 seconds 
+  Import took 0.014100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Materials/geonosisSand.mat
+  artifactKey: Guid(4f98be82785c0624fb19985a452eb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/geonosisSand.mat using Guid(4f98be82785c0624fb19985a452eb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e61f4d6322a13f7c60757de5fca1035b') in 0.012281 seconds 
+  Import took 0.014889 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.847369 seconds.
+  path: Assets/Materials/PowerUps/AmmoMat.mat
+  artifactKey: Guid(5425a73c3610f69479477ebf3fa5bc78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/PowerUps/AmmoMat.mat using Guid(5425a73c3610f69479477ebf3fa5bc78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a17c3954a788fb45460ef617e27e79f') in 0.014962 seconds 
+  Import took 0.018194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.939078 seconds.
+  path: Assets/Prefabs/PowerUps/AmmoPowerUp.prefab
+  artifactKey: Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PowerUps/AmmoPowerUp.prefab using Guid(9c6bdc908121b3b4e870fa8eacaed6b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f8863f9792f55fa7eac855e3c996688') in 0.008035 seconds 
+  Import took 0.011125 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.863404 seconds.
+  path: Assets/Materials/PowerUps/AmmoMat.mat
+  artifactKey: Guid(5425a73c3610f69479477ebf3fa5bc78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/PowerUps/AmmoMat.mat using Guid(5425a73c3610f69479477ebf3fa5bc78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1c1f9fe813014417f7823a6dcaafdf3') in 0.011960 seconds 
+  Import took 0.014957 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002843 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.887 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1464 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.6 MB.
+System memory in use after: 84.4 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2043.
+Total: 2.002600 ms (FindLiveObjects: 0.136500 ms CreateObjectMapping: 0.038700 ms MarkObjects: 1.604100 ms  DeleteObjects: 0.222600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

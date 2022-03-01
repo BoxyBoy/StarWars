@@ -11,7 +11,7 @@ public class Player : GameEntity {
 
     Camera viewCamera;
     PlayerController playerController;
-    GunController gunController;
+    public GunController gunController;
     Spawner spawner;
     int i;
     int c;
