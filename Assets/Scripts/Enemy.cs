@@ -43,16 +43,17 @@ public class Enemy : GameEntity {
         pathFinder = GetComponent<NavMeshAgent>();
         myAnimator = GetComponent<Animator>();
 
-        if (GameObject.FindGameObjectWithTag("Player") != null)
-        {
-            hasTarget = true;
+        //if (GameObject.FindGameObjectWithTag("Player") != null)
+        //{
+        //    hasTarget = true;
 
-            target = GameObject.FindGameObjectWithTag("Player").transform;
-            targetEntity = target.GetComponent<GameEntity>();
+        //    target = GameObject.FindGameObjectWithTag("Player").transform;
+        //    targetEntity = target.GetComponent<GameEntity>();
 
-            myCollisionRadius = GetComponent<CapsuleCollider>().radius;
-            targetCollisionRadius = target.GetComponent<CapsuleCollider>().radius;
-        }
+        //    myCollisionRadius = GetComponent<CapsuleCollider>().radius;
+        //    targetCollisionRadius = target.GetComponent<CapsuleCollider>().radius;
+        //}
+        GetTarget();
     }
 
     protected override void Start ()
@@ -94,6 +95,11 @@ public class Enemy : GameEntity {
     {
         canAttackPlayer = true;
 
+        if (targetEntity == null)
+        {
+            GetTarget();
+        }
+
         if (hasTarget && Time.time > nextAttackTime)
         {
             float sqrDistanceToTarget = (target.position - transform.position).sqrMagnitude;
@@ -107,6 +113,20 @@ public class Enemy : GameEntity {
                     
                 }
             }
+        }
+    }
+
+    public void GetTarget()
+    {
+        if (GameObject.FindGameObjectWithTag("Player") != null)
+        {
+            hasTarget = true;
+
+            target = GameObject.FindGameObjectWithTag("Player").transform;
+            targetEntity = target.GetComponent<GameEntity>();
+
+            myCollisionRadius = GetComponent<CapsuleCollider>().radius;
+            targetCollisionRadius = target.GetComponent<CapsuleCollider>().radius;
         }
     }
 
@@ -184,6 +204,7 @@ public class Enemy : GameEntity {
     private void OnTargetDeath()
     {
         hasTarget = false;
-        currentState = State.Idle;
+        targetEntity = null;
+        currentState = State.Idle;        
     }
 }
