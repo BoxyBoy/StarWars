@@ -6,6 +6,7 @@ public class GameEntity : MonoBehaviour, IDamageable
     public float maxShield = 100;
 
     public event System.Action OnDeath;
+    public int OnDeathCount = 0;
 
     public float health { get; set; }
    

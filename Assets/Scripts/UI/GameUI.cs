@@ -18,25 +18,29 @@ public class GameUI : MonoBehaviour {
     public RectTransform shieldBar;
     public Text ammoText;
 
-
-    Player player;
+    public SquadController squad;
+    public Player player;
     Spawner spawner;
 
     private void Awake()
     {
+        //player = squad.focusPlayer;
         spawner = FindObjectOfType<Spawner>();
         spawner.OnNewWave += OnNewWave;
        
     }
 
     private void Start () {
-        player = FindObjectOfType<Player>();
+        player = squad.focusPlayer;
         player.OnDeath += OnGameOver;
-        
 	}
 
     private void Update()
     {
+        if(player == null)
+        {
+            player = squad.focusPlayer;
+        }
 
         scoreUI.text = ScoreManager.score.ToString("D6");
         ammoText.text = "Ammo: " + player.gunController.equippedGun.projectilesRemainingInMagazine + "/" + player.gunController.equippedGun.ammoCount.ToString();

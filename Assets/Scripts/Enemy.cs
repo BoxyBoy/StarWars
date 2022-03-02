@@ -20,11 +20,12 @@ public class Enemy : GameEntity {
 
     NavMeshAgent pathFinder;
     Animator myAnimator;
-    Transform target;
+    public Transform target;
     Vector3 agentDestination;
-    GameEntity targetEntity;
+    public Player targetEntity;
     Material skinMaterial;
     Color originalColor;
+    SquadController squad;
 
     State currentState;
 
@@ -42,6 +43,7 @@ public class Enemy : GameEntity {
     {
         pathFinder = GetComponent<NavMeshAgent>();
         myAnimator = GetComponent<Animator>();
+        squad = FindObjectOfType<SquadController>();
 
         //if (GameObject.FindGameObjectWithTag("Player") != null)
         //{
@@ -63,7 +65,12 @@ public class Enemy : GameEntity {
         if (hasTarget)
         {
             currentState = State.Chasing;
-            targetEntity.OnDeath += OnTargetDeath;
+            if(targetEntity.OnDeathCount < 1)
+            {
+                targetEntity.OnDeath += OnTargetDeath;
+            }
+            targetEntity.OnDeathCount++;
+            Debug.Log($"{targetEntity.name}'s OnDeathCount: {targetEntity.OnDeathCount}");
             agentDestination = pathFinder.destination;
 
             StartCoroutine(UpdatePath());
@@ -118,12 +125,15 @@ public class Enemy : GameEntity {
 
     public void GetTarget()
     {
-        if (GameObject.FindGameObjectWithTag("Player") != null)
+        //if (GameObject.FindGameObjectWithTag("Player") != null)
+        if (squad.squadies.Count > 0)
         {
             hasTarget = true;
 
-            target = GameObject.FindGameObjectWithTag("Player").transform;
-            targetEntity = target.GetComponent<GameEntity>();
+            //target = GameObject.FindGameObjectWithTag("Player").transform;
+            //targetEntity = target.GetComponent<GameEntity>();
+            target = squad.focusPlayer.transform;
+            targetEntity = target.GetComponent<Player>();
 
             myCollisionRadius = GetComponent<CapsuleCollider>().radius;
             targetCollisionRadius = target.GetComponent<CapsuleCollider>().radius;
@@ -203,6 +213,8 @@ public class Enemy : GameEntity {
 
     private void OnTargetDeath()
     {
+        //squad.squadies[squad.focusIndex] = null;
+        squad.NextFocusPlayer();
         hasTarget = false;
         targetEntity = null;
         currentState = State.Idle;        

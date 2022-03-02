@@ -15,7 +15,8 @@ namespace CompleteProject
         void Start()
         {
             currentSquadieIndex = 0;
-            target = squad.squadies[currentSquadieIndex].transform;
+            //target = squad.squadies[currentSquadieIndex].transform;
+            target = squad.focusPlayer.transform;
             offset = transform.position - target.position;
         }
 
@@ -25,8 +26,15 @@ namespace CompleteProject
 
             if (target == null)
             {
-                currentSquadieIndex++;
-                target = squad.squadies[currentSquadieIndex].transform;
+                //for(int i = 0; i < squad.squadies.Count; i++)
+                //{
+                //    if(squad.squadies[i] != null)
+                //    {
+                //        currentSquadieIndex = i;
+                //    }
+                //}
+                //target = squad.squadies[currentSquadieIndex].transform;
+                target = squad.focusPlayer.transform;
             }
 
             Vector3 targetCamPos = target.position + offset;
