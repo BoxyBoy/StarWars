@@ -22,6 +22,8 @@ public class GameUI : MonoBehaviour {
     public Player player;
     Spawner spawner;
 
+    
+
     private void Awake()
     {
         //player = squad.focusPlayer;
@@ -32,7 +34,7 @@ public class GameUI : MonoBehaviour {
 
     private void Start () {
         player = squad.focusPlayer;
-        player.OnDeath += OnGameOver;
+        //player.OnDeath += OnGameOver;
 	}
 
     private void Update()
@@ -40,6 +42,11 @@ public class GameUI : MonoBehaviour {
         if(player == null)
         {
             player = squad.focusPlayer;
+        }
+
+        if(squad.numSquadies == 1)
+        {
+            player.OnDeath += OnGameOver;
         }
 
         scoreUI.text = ScoreManager.score.ToString("D6");

@@ -8,10 +8,13 @@ public class SquadController : MonoBehaviour
     public Player focusPlayer;
     public int focusIndex;
 
+    public int numSquadies;
+
     private void Start()
     {
         focusPlayer = squadies[0];
         focusIndex = 0;
+        numSquadies = squadies.Count;
     }
 
     void FixedUpdate()
@@ -57,6 +60,7 @@ public class SquadController : MonoBehaviour
         int currentIndex = 0;
         squadies[focusIndex] = null;
         focusPlayer = null;
+        numSquadies--;
 
         while(focusPlayer == null)
         {
