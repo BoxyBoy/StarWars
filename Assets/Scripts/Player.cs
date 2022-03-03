@@ -15,6 +15,12 @@ public class Player : GameEntity {
     Spawner spawner;
     int i;
     int c;
+
+    //public RectTransform healthBar;
+    //public RectTransform shieldBar;
+
+    [SerializeField] public GameObject playerUI; 
+
     private void Awake()
     {
        
@@ -32,6 +38,8 @@ public class Player : GameEntity {
         viewCamera = Camera.main;
 
         i = gunController.weapons.Length - 1;
+
+        playerUI.GetComponent<PlayerUI>().SetPlayer(this);
     }
 
     private void SwitchWeapon()
@@ -93,6 +101,15 @@ public class Player : GameEntity {
         Vector3 moveVelocity = moveInput.normalized * moveSpeed;
 
         playerController.Move(moveVelocity);
+
+        ////Update Health
+        //float healthPercent = 0f;
+        //healthPercent = health / initialHealth;
+        //healthBar.localScale = new Vector3(healthPercent, 1f, 1f);
+
+        //float shieldPercent = 0f;
+        //shieldPercent = shield / maxShield;
+        //shieldBar.localScale = new Vector3(shieldPercent, 1f, 1f);
 
         // Look At Input
         Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);
