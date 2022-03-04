@@ -8,9 +8,9 @@ public class GameEntity : MonoBehaviour, IDamageable
     public event System.Action OnDeath;
     public int OnDeathCount = 0;
 
-    public float health { get; set; }
-   
-    public float shield { get; set; }
+    [SerializeField] public float health { get; set; }
+
+    [SerializeField] public float shield { get; set; }
     protected bool dead;
 
     protected virtual void Start()

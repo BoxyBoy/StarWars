@@ -22,7 +22,7 @@ public abstract class PowerUp : MonoBehaviour
         modelCollider = GetComponent<Collider>();
         rb = GetComponent<Rigidbody>();
         initialLocation = this.transform.position;
-        player = FindObjectOfType<Player>();
+        //player = FindObjectOfType<Player>();
     }
 
     void Update()
@@ -46,6 +46,7 @@ public abstract class PowerUp : MonoBehaviour
     {
         if (collision.collider.tag.Equals("Player"))
         {
+            player = collision.gameObject.GetComponent<Player>();
             pickUpModel.SetActive(false);
             ApplyPowerUp();
             isPickedUp = true;

@@ -22,7 +22,11 @@ public class GameUI : MonoBehaviour {
     public Player player;
     Spawner spawner;
 
-    
+    public PlayerUI player1Health;
+    public PlayerUI player2Health;
+    public PlayerUI player3Health;
+    public PlayerUI player4Health;
+    public PlayerUI player5Health;
 
     private void Awake()
     {

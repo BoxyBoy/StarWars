@@ -19,7 +19,7 @@ public class Player : GameEntity {
     //public RectTransform healthBar;
     //public RectTransform shieldBar;
 
-    [SerializeField] public GameObject playerUI; 
+    [SerializeField] public PlayerUI playerUI;
 
     private void Awake()
     {
@@ -27,6 +27,7 @@ public class Player : GameEntity {
         playerController = GetComponent<PlayerController>();
         gunController = GetComponent<GunController>();
         spawner = FindObjectOfType<Spawner>();
+        //playerUI.SetPlayer(this);
 
         spawner.OnNewWave += OnNewWave;
     }
@@ -39,7 +40,17 @@ public class Player : GameEntity {
 
         i = gunController.weapons.Length - 1;
 
-        playerUI.GetComponent<PlayerUI>().SetPlayer(this);
+        if (playerUI != null)
+        {
+            //GameObject _uiGo = Instantiate(playerUI);
+            //_uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
+            Debug.Log($"{playerUI.player.GetType().Name}");
+            Debug.Log("I should be displaying");
+        }
+        else
+        {
+            Debug.LogWarning("<Color=Red><a>Missing</a></Color> PlayerUiPrefab reference on player Prefab.", this);
+        }
     }
 
     private void SwitchWeapon()
