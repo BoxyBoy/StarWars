@@ -4,8 +4,8 @@ using System.Collections;
 [RequireComponent (typeof (Rigidbody))]
 public class PlayerController : MonoBehaviour
 {
-    Rigidbody myRigidbody;
-    Vector3 myVelocity;
+    public Rigidbody myRigidbody;
+    public Vector3 myVelocity;
 
     private void Start()
     {

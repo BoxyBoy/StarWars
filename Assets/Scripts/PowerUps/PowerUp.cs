@@ -44,7 +44,7 @@ public abstract class PowerUp : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag.Equals("Player"))
+        if (collision.collider.tag.Equals("Player") && pickUpModel.activeInHierarchy)
         {
             player = collision.gameObject.GetComponent<Player>();
             pickUpModel.SetActive(false);

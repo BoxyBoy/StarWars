@@ -135,6 +135,12 @@ public class Enemy : GameEntity {
             target = squad.focusPlayer.transform;
             targetEntity = target.GetComponent<Player>();
 
+            if (targetEntity.OnDeathCount < 1)
+            {
+                targetEntity.OnDeath += OnTargetDeath;
+            }
+            targetEntity.OnDeathCount++;
+
             myCollisionRadius = GetComponent<CapsuleCollider>().radius;
             targetCollisionRadius = target.GetComponent<CapsuleCollider>().radius;
         }
@@ -214,6 +220,8 @@ public class Enemy : GameEntity {
     private void OnTargetDeath()
     {
         //squad.squadies[squad.focusIndex] = null;
+        targetEntity.healthBar.gameObject.SetActive(false);
+        targetEntity.shieldBar.gameObject.SetActive(false);
         squad.NextFocusPlayer();
         hasTarget = false;
         targetEntity = null;
