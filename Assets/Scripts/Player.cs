@@ -10,7 +10,7 @@ public class Player : GameEntity {
     public float aimDistanceTreshold = 1.0f;
 
     Camera viewCamera;
-    PlayerController playerController;
+    public PlayerController playerController;
     public GunController gunController;
     Spawner spawner;
     int i;
@@ -175,4 +175,14 @@ public class Player : GameEntity {
         AudioManager.instance.PlaySound("Player Death", transform.position);
         base.Die();
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Wall")
+        {
+            GameObject.FindObjectOfType<SquadController>().CollisionDetected(this);
+        }
+    }
+
+    
 }

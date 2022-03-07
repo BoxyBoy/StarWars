@@ -12,74 +12,138 @@ public class SquadController : MonoBehaviour
 
     Vector3 focusPlayerPosition;
 
-    Vector3 TLOffset = new Vector3(-30, 0, 20);
-    Vector3 TROffset = new Vector3(30, 0, 20);
-    Vector3 BLOffset = new Vector3(-30, 0, -20);
-    Vector3 BROffset = new Vector3(30, 0, -20);
+    Vector3 TLOffset = new Vector3(-3, 0, 2);
+    Vector3 TROffset = new Vector3(3, 0, 2);
+    Vector3 BLOffset = new Vector3(-3, 0, -2);
+    Vector3 BROffset = new Vector3(3, 0, -2);
 
     private void Start()
     {
         focusPlayer = squadies[0];
         focusIndex = 0;
         numSquadies = squadies.Count;
-        focusPlayerPosition = focusPlayer.transform.position;
+        focusPlayerPosition = focusPlayer.playerController.myRigidbody.position;
     }
 
     void FixedUpdate()
     {
         //this.transform.position = squadies[0].transform.position;
-        focusPlayerPosition = focusPlayer.transform.position;
+        focusPlayerPosition = focusPlayer.playerController.myRigidbody.position;
+
+        //Debug.Log($"FocusPlayerPosition: {focusPlayerPosition}");
+
+        Debug.Log($"TLOffset Normalized: {TLOffset.normalized}");
+        Debug.Log($"TROffset Normalized: {TROffset.normalized}");
+        Debug.Log($"BLOffset Normalized: {BLOffset.normalized}");
+        Debug.Log($"BROffset Normalized: {BROffset.normalized}");
 
         if (focusPlayer == squadies[0])
         {
             if (squadies[1].transform.position != (focusPlayerPosition + TLOffset))
             {
-                squadies[1].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (TLOffset * squadies[1].moveSpeed) * Time.fixedDeltaTime);
+                Vector3 moveVelocity = TLOffset.normalized * squadies[1].moveSpeed;
+                squadies[1].playerController.Move(moveVelocity);
+
+                squadies[1].playerController.myRigidbody.MovePosition((focusPlayerPosition + TLOffset) + squadies[1].playerController.myVelocity * Time.fixedDeltaTime);
             }
             if (squadies[2].transform.position != (focusPlayerPosition + TROffset))
             {
-                squadies[2].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (TROffset * squadies[2].moveSpeed) * Time.fixedDeltaTime);
+                Vector3 moveVelocity = TROffset.normalized * squadies[2].moveSpeed;
+                squadies[2].playerController.Move(moveVelocity);
+
+                squadies[2].playerController.myRigidbody.MovePosition((focusPlayerPosition + TROffset) + squadies[2].playerController.myVelocity * Time.fixedDeltaTime);
             }
             if (squadies[3].transform.position != (focusPlayerPosition + BLOffset))
             {
-                squadies[3].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (BLOffset * squadies[3].moveSpeed) * Time.fixedDeltaTime);
+                Vector3 moveVelocity = BLOffset.normalized * squadies[3].moveSpeed;
+                squadies[3].playerController.Move(moveVelocity);
+
+                squadies[3].playerController.myRigidbody.MovePosition((focusPlayerPosition + BLOffset) + squadies[3].playerController.myVelocity * Time.fixedDeltaTime);
             }
             if (squadies[4].transform.position != (focusPlayerPosition + BROffset))
             {
-                squadies[4].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (BROffset * squadies[4].moveSpeed) * Time.fixedDeltaTime);
+                Vector3 moveVelocity = BROffset.normalized * squadies[4].moveSpeed;
+                squadies[4].playerController.Move(moveVelocity);
+
+                squadies[4].playerController.myRigidbody.MovePosition((focusPlayerPosition + BROffset) + squadies[4].playerController.myVelocity * Time.fixedDeltaTime);
             }
         }
         else if(focusPlayer == squadies[1])
         {
+            //if (squadies[2].transform.position != (focusPlayerPosition + TROffset))
+            //{
+            //    squadies[2].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (TROffset * squadies[2].moveSpeed) * Time.fixedDeltaTime);
+            //}
+            //if (squadies[3].transform.position != (focusPlayerPosition + BLOffset))
+            //{
+            //    squadies[3].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (BLOffset * squadies[3].moveSpeed) * Time.fixedDeltaTime);
+            //}
+            //if (squadies[4].transform.position != (focusPlayerPosition + BROffset))
+            //{
+            //    squadies[4].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (BROffset * squadies[4].moveSpeed) * Time.fixedDeltaTime);
+            //}
+
             if (squadies[2].transform.position != (focusPlayerPosition + TROffset))
             {
-                squadies[2].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (TROffset * squadies[2].moveSpeed) * Time.fixedDeltaTime);
+                Vector3 moveVelocity = TROffset.normalized * squadies[2].moveSpeed;
+                squadies[2].playerController.Move(moveVelocity);
+
+                squadies[2].GetComponent<PlayerController>().myRigidbody.MovePosition((focusPlayerPosition + TROffset) + squadies[2].playerController.myVelocity * Time.fixedDeltaTime);
             }
             if (squadies[3].transform.position != (focusPlayerPosition + BLOffset))
             {
-                squadies[3].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (BLOffset * squadies[3].moveSpeed) * Time.fixedDeltaTime);
+                Vector3 moveVelocity = BLOffset.normalized * squadies[3].moveSpeed;
+                squadies[3].playerController.Move(moveVelocity);
+
+                squadies[3].GetComponent<PlayerController>().myRigidbody.MovePosition((focusPlayerPosition + BLOffset) + squadies[3].playerController.myVelocity * Time.fixedDeltaTime);
             }
             if (squadies[4].transform.position != (focusPlayerPosition + BROffset))
             {
-                squadies[4].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (BROffset * squadies[4].moveSpeed) * Time.fixedDeltaTime);
+                Vector3 moveVelocity = BROffset.normalized * squadies[4].moveSpeed;
+                squadies[4].playerController.Move(moveVelocity);
+
+                squadies[4].GetComponent<PlayerController>().myRigidbody.MovePosition((focusPlayerPosition + BROffset) + squadies[4].playerController.myVelocity * Time.fixedDeltaTime);
             }
         }
         else if (focusPlayer == squadies[2])
         {
+            //if (squadies[3].transform.position != (focusPlayerPosition + BLOffset))
+            //{
+            //    squadies[3].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (BLOffset * squadies[3].moveSpeed) * Time.fixedDeltaTime);
+            //}
+            //if (squadies[4].transform.position != (focusPlayerPosition + BROffset))
+            //{
+            //    squadies[4].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (BROffset * squadies[4].moveSpeed) * Time.fixedDeltaTime);
+            //}
+
             if (squadies[3].transform.position != (focusPlayerPosition + BLOffset))
             {
-                squadies[3].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (BLOffset * squadies[3].moveSpeed) * Time.fixedDeltaTime);
+                Vector3 moveVelocity = BLOffset.normalized * squadies[3].moveSpeed;
+                squadies[3].playerController.Move(moveVelocity);
+
+                squadies[3].GetComponent<PlayerController>().myRigidbody.MovePosition((focusPlayerPosition + BLOffset) + squadies[3].playerController.myVelocity * Time.fixedDeltaTime);
             }
             if (squadies[4].transform.position != (focusPlayerPosition + BROffset))
             {
-                squadies[4].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (BROffset * squadies[4].moveSpeed) * Time.fixedDeltaTime);
+                Vector3 moveVelocity = BROffset.normalized * squadies[4].moveSpeed;
+                squadies[4].playerController.Move(moveVelocity);
+
+                squadies[4].GetComponent<PlayerController>().myRigidbody.MovePosition((focusPlayerPosition + BROffset) + squadies[4].playerController.myVelocity * Time.fixedDeltaTime);
             }
         }
         else if (focusPlayer == squadies[3])
         {
+            //if (squadies[4].transform.position != (focusPlayerPosition + BROffset))
+            //{
+            //    squadies[4].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (BROffset * squadies[4].moveSpeed) * Time.fixedDeltaTime);
+            //}
+
             if (squadies[4].transform.position != (focusPlayerPosition + BROffset))
             {
-                squadies[4].GetComponent<PlayerController>().myRigidbody.MovePosition(focusPlayerPosition + (BROffset * squadies[4].moveSpeed) * Time.fixedDeltaTime);
+                Vector3 moveVelocity = BROffset.normalized * squadies[4].moveSpeed;
+                squadies[4].playerController.Move(moveVelocity);
+
+                squadies[4].GetComponent<PlayerController>().myRigidbody.MovePosition((focusPlayerPosition + BROffset) + squadies[4].playerController.myVelocity * Time.fixedDeltaTime);
             }
         }
 
@@ -139,5 +203,10 @@ public class SquadController : MonoBehaviour
                 currentIndex++;
             }
         }
+    }
+
+    public void CollisionDetected(Player player)
+    {
+        Debug.Log($"{player.name} collided");
     }
 }
