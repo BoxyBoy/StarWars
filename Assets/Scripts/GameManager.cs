@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public float spawnTimer = 100;
+    public float spawnTimer = 1.25f;
 
     public GameObject[] enemyList;
     public GameObject[] enemySpawners;
@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
         if(spawnTimer <= 0)
         {
             SpawnEnemy();
+            spawnTimer = 1.25f;
         }
     }
 
