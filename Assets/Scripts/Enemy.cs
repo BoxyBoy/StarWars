@@ -102,7 +102,7 @@ public class Enemy : GameEntity {
     {
         canAttackPlayer = true;
 
-        if (targetEntity == null)
+        if (targetEntity == null && squad.focusIndex < squad.squadies.Count)
         {
             GetTarget();
         }
@@ -126,7 +126,7 @@ public class Enemy : GameEntity {
     public void GetTarget()
     {
         //if (GameObject.FindGameObjectWithTag("Player") != null)
-        if (squad.squadies.Count > 0)
+        if (squad.focusIndex < squad.squadies.Count)
         {
             hasTarget = true;
 
@@ -225,6 +225,11 @@ public class Enemy : GameEntity {
         squad.NextFocusPlayer();
         hasTarget = false;
         targetEntity = null;
-        currentState = State.Idle;        
+        if (squad.focusIndex >= squad.squadies.Count)
+        {
+            currentState = State.Idle;
+        }
+        
+               
     }
 }

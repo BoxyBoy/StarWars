@@ -29,7 +29,7 @@ public class Spawner : MonoBehaviour {
 
     private void Start()
     {
-        playerEntity = FindObjectOfType<Player>();
+        playerEntity = FindObjectOfType<SquadController>().squadies[4];
         playerEntity.OnDeath += OnPlayerDeath;
         playerTransform = playerEntity.transform;
 
