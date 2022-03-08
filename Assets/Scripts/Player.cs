@@ -10,16 +10,16 @@ public class Player : GameEntity {
     public float aimDistanceTreshold = 1.0f;
 
     Camera viewCamera;
-    PlayerController playerController;
+    public PlayerController playerController;
     public GunController gunController;
     Spawner spawner;
     int i;
     int c;
 
-    //public RectTransform healthBar;
-    //public RectTransform shieldBar;
+    public RectTransform healthBar;
+    public RectTransform shieldBar;
 
-    [SerializeField] public PlayerUI playerUI;
+    //[SerializeField] public PlayerUI playerUI;
 
     private void Awake()
     {
@@ -27,6 +27,8 @@ public class Player : GameEntity {
         playerController = GetComponent<PlayerController>();
         gunController = GetComponent<GunController>();
         spawner = FindObjectOfType<Spawner>();
+        healthBar.gameObject.SetActive(true);
+        shieldBar.gameObject.SetActive(true);
         //playerUI.SetPlayer(this);
 
         spawner.OnNewWave += OnNewWave;
@@ -40,17 +42,17 @@ public class Player : GameEntity {
 
         i = gunController.weapons.Length - 1;
 
-        if (playerUI != null)
-        {
-            //GameObject _uiGo = Instantiate(playerUI);
-            //_uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
-            Debug.Log($"{playerUI.player.GetType().Name}");
-            Debug.Log("I should be displaying");
-        }
-        else
-        {
-            Debug.LogWarning("<Color=Red><a>Missing</a></Color> PlayerUiPrefab reference on player Prefab.", this);
-        }
+        //if (playerUI != null)
+        //{
+        //    //GameObject _uiGo = Instantiate(playerUI);
+        //    //_uiGo.SendMessage("SetTarget", this, SendMessageOptions.RequireReceiver);
+        //    Debug.Log($"{playerUI.player.GetType().Name}");
+        //    Debug.Log("I should be displaying");
+        //}
+        //else
+        //{
+        //    Debug.LogWarning("<Color=Red><a>Missing</a></Color> PlayerUiPrefab reference on player Prefab.", this);
+        //}
     }
 
     private void SwitchWeapon()
@@ -113,14 +115,14 @@ public class Player : GameEntity {
 
         playerController.Move(moveVelocity);
 
-        ////Update Health
-        //float healthPercent = 0f;
-        //healthPercent = health / initialHealth;
-        //healthBar.localScale = new Vector3(healthPercent, 1f, 1f);
+        //Update Health
+        float healthPercent = 0f;
+        healthPercent = health / initialHealth;
+        healthBar.localScale = new Vector3(healthPercent, 1f, 1f);
 
-        //float shieldPercent = 0f;
-        //shieldPercent = shield / maxShield;
-        //shieldBar.localScale = new Vector3(shieldPercent, 1f, 1f);
+        float shieldPercent = 0f;
+        shieldPercent = shield / maxShield;
+        shieldBar.localScale = new Vector3(shieldPercent, 1f, 1f);
 
         // Look At Input
         Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);
@@ -173,4 +175,14 @@ public class Player : GameEntity {
         AudioManager.instance.PlaySound("Player Death", transform.position);
         base.Die();
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Wall")
+        {
+            GameObject.FindObjectOfType<SquadController>().CollisionDetected(this);
+        }
+    }
+
+    
 }

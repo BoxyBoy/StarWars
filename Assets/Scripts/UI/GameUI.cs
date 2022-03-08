@@ -14,19 +14,20 @@ public class GameUI : MonoBehaviour {
     public Text newWaveEnemyCount;
     public Text scoreUI;
     public Text gameOverScoreUI;
-    public RectTransform healthBar;
-    public RectTransform shieldBar;
+    //public RectTransform healthBar;
+    //public RectTransform shieldBar;
+    public GameObject healthBars;
     public Text ammoText;
 
     public SquadController squad;
     public Player player;
     Spawner spawner;
 
-    public PlayerUI player1Health;
-    public PlayerUI player2Health;
-    public PlayerUI player3Health;
-    public PlayerUI player4Health;
-    public PlayerUI player5Health;
+    //public PlayerUI player1Health;
+    //public PlayerUI player2Health;
+    //public PlayerUI player3Health;
+    //public PlayerUI player4Health;
+    //public PlayerUI player5Health;
 
     private void Awake()
     {
@@ -56,19 +57,20 @@ public class GameUI : MonoBehaviour {
         scoreUI.text = ScoreManager.score.ToString("D6");
         ammoText.text = "Ammo: " + player.gunController.equippedGun.projectilesRemainingInMagazine + "/" + player.gunController.equippedGun.ammoCount.ToString();
         
-        float healthPercent = 0f;
-        if (player != null)
-        {
-            healthPercent = player.health / player.initialHealth;
-        }
-        healthBar.localScale = new Vector3(healthPercent, 1f, 1f);
+        //handled in Player.cs
+        //float healthPercent = 0f;
+        //if (player != null)
+        //{
+        //    healthPercent = player.health / player.initialHealth;
+        //}
+        //healthBar.localScale = new Vector3(healthPercent, 1f, 1f);
 
-        float shieldPercent = 0f;
-        if (player != null)
-        {
-            shieldPercent = player.shield / player.maxShield;
-        }
-        shieldBar.localScale = new Vector3(shieldPercent, 1f, 1f);
+        //float shieldPercent = 0f;
+        //if (player != null)
+        //{
+        //    shieldPercent = player.shield / player.maxShield;
+        //}
+        //shieldBar.localScale = new Vector3(shieldPercent, 1f, 1f);
     }
 
     private void OnNewWave(int waveNumber)
@@ -89,7 +91,7 @@ public class GameUI : MonoBehaviour {
         StartCoroutine(Fade(Color.clear, new Color(0, 0, 0, .7f), 2f));
         gameOverScoreUI.text = scoreUI.text;
         scoreUI.transform.parent.gameObject.SetActive(false);
-        healthBar.transform.parent.gameObject.SetActive(false);
+        healthBars.transform.gameObject.SetActive(false);
         gameOverUI.SetActive(true);
     }
 
