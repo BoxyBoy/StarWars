@@ -3,6 +3,7 @@
 [RequireComponent (typeof (PlayerController))]
 [RequireComponent (typeof (GunController))]
 public class Player : GameEntity {
+    public bool isNotStoryMode;
 
     public float moveSpeed = 5f;
     public Crosshairs crosshairs;
@@ -31,7 +32,10 @@ public class Player : GameEntity {
         shieldBar.gameObject.SetActive(true);
         //playerUI.SetPlayer(this);
 
-        spawner.OnNewWave += OnNewWave;
+        if(isNotStoryMode)
+        {
+            spawner.OnNewWave += OnNewWave;
+        }
     }
 
     protected override void Start ()

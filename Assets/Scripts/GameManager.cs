@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public float spawnTimer = 100;
+
+    public GameObject[] enemyList;
     public GameObject[] enemySpawners;
-    public GameObject squadSpawner;
-    float spawnTimer = 0.2f;
 
     void Start()
     {
-        
     }
     
     void Update()
@@ -18,13 +18,15 @@ public class GameManager : MonoBehaviour
         spawnTimer -= Time.deltaTime;
         if(spawnTimer <= 0)
         {
-            // spawn an enemy at one of the spawn points, probably calling a
-            // function called "SpawnEnemy()" or something that does that logic
+            SpawnEnemy();
         }
     }
 
+    // after an amount of time has passed, spawn an enemy from one of the points on the map
     public void SpawnEnemy()
     {
-
+        int selectedSpawner = Random.Range(0, enemySpawners.Length - 1);
+        Transform enemySpawnTransform = enemySpawners[selectedSpawner].transform;
+        Instantiate(enemyList[Random.Range(0, enemyList.Length - 1)], enemySpawnTransform);
     }
 }
