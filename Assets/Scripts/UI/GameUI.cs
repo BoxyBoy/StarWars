@@ -8,12 +8,14 @@ public class GameUI : MonoBehaviour {
 
     public Image fadePlane;
     public GameObject gameOverUI;
+    public GameObject pauseUI;
 
     public RectTransform newWaveBanner;
     public Text newWaveTitle;
     public Text newWaveEnemyCount;
     public Text scoreUI;
     public Text gameOverScoreUI;
+    public Text pauseScoreUI;
     //public RectTransform healthBar;
     //public RectTransform shieldBar;
     public GameObject healthBars;
@@ -22,6 +24,8 @@ public class GameUI : MonoBehaviour {
     public SquadController squad;
     public Player player;
     Spawner spawner;
+
+    public static bool isPaused = false;
 
     //public PlayerUI player1Health;
     //public PlayerUI player2Health;
@@ -44,6 +48,7 @@ public class GameUI : MonoBehaviour {
 
     private void Update()
     {
+        
         if(player == null)
         {
             player = squad.focusPlayer;
@@ -56,7 +61,19 @@ public class GameUI : MonoBehaviour {
 
         scoreUI.text = ScoreManager.score.ToString("D6");
         ammoText.text = "Ammo: " + player.gunController.equippedGun.projectilesRemainingInMagazine + "/" + player.gunController.equippedGun.ammoCount.ToString();
-        
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (isPaused)
+            {
+                Unpause();
+            }
+            else
+            {
+                Pause();
+            }
+        }
+
         //handled in Player.cs
         //float healthPercent = 0f;
         //if (player != null)
@@ -144,5 +161,26 @@ public class GameUI : MonoBehaviour {
     public void ReturnToMainMenu()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    public void Pause()
+    {
+        Cursor.visible = true;
+        pauseScoreUI.text = scoreUI.text;
+        scoreUI.transform.parent.gameObject.SetActive(false);
+        //healthBars.transform.gameObject.SetActive(false);
+        pauseUI.SetActive(true);
+        Time.timeScale = 0f;
+        isPaused = true;
+    }
+
+    public void Unpause()
+    {
+        Cursor.visible = false;
+        scoreUI.transform.parent.gameObject.SetActive(true);
+        //healthBars.transform.gameObject.SetActive(false);
+        pauseUI.SetActive(false);
+        Time.timeScale = 1f;
+        isPaused = false;
     }
 }
